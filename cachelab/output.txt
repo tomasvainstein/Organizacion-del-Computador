@@ -1,0 +1,18 @@
+0 2a d bfbb9 0 -1 0 0 0
+1 2a 3f 80b1 0 -1 0 0 1
+2 1 d bfbb9 0 bfbb9 1 0 2
+3 1 d bfbb9 0 bfbb9 1 1 3
+4 1 d bfbb9 0 bfbb9 1 1 4
+5 1 d bfbb9 0 bfbb9 1 1 5
+6 2a 1 80ae 0 -1 0 0 6
+7 1 d bfbb9 0 bfbb9 1 1 7
+8 2a 4 80ae 0 -1 0 0 8
+9 1 d bfbb9 0 bfbb9 1 1 9
+10 1 d bfbb9 0 bfbb9 1 1 10
+2-way, 64 sets, size = 2KB
+loads 65672 stores 34328 total 100000
+rmiss 41 wmiss 9 total 50
+dirty rmiss 0 dirty wmiss 0
+bytes read 3200 bytes written 0
+read time 69772 write time 35228
+miss rate 2000

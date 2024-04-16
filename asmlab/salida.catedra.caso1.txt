@@ -1,0 +1,2836 @@
+== Int ==
+
+Clonar
+
+13
+0
+-20
+
+Comparar
+
+intCmp(13,13) --> 0
+intCmp(0,0) --> 0
+intCmp(0,13) --> 1
+intCmp(13,0) --> -1
+intCmp(-20,13) --> 1
+intCmp(0,-20) --> -1
+intCmp(-20,0) --> 1
+
+== String ==
+
+Clonar
+
+7 - Omega 4
+0 - NULL
+
+Comparar
+
+strCmp(Omega 4,Omega 4) --> 0
+strCmp(,) --> 0
+strCmp(Palaven,Omega 4) --> -1
+strCmp(Omega 4,Palaven) --> 1
+strCmp(Feros,Omega 4) --> 1
+strCmp(Palaven,Feros) --> -1
+strCmp(Feros,Palaven) --> 1
+strLen(sar) --> 3
+strCmp(sar,sar) --> 0
+strCmp(sar,23) --> -1
+strCmp(sar,taaa) --> 1
+strCmp(sar,tbb) --> 1
+strCmp(sar,tix) --> 1
+strCmp(sar,taaab) --> 1
+strCmp(sar,taa0) --> 1
+strCmp(sar,tbb) --> 1
+strCmp(sar,) --> -1
+strLen(23) --> 2
+strCmp(23,sar) --> 1
+strCmp(23,23) --> 0
+strCmp(23,taaa) --> 1
+strCmp(23,tbb) --> 1
+strCmp(23,tix) --> 1
+strCmp(23,taaab) --> 1
+strCmp(23,taa0) --> 1
+strCmp(23,tbb) --> 1
+strCmp(23,) --> -1
+strLen(taaa) --> 4
+strCmp(taaa,sar) --> -1
+strCmp(taaa,23) --> -1
+strCmp(taaa,taaa) --> 0
+strCmp(taaa,tbb) --> 1
+strCmp(taaa,tix) --> 1
+strCmp(taaa,taaab) --> 1
+strCmp(taaa,taa0) --> -1
+strCmp(taaa,tbb) --> 1
+strCmp(taaa,) --> -1
+strLen(tbb) --> 3
+strCmp(tbb,sar) --> -1
+strCmp(tbb,23) --> -1
+strCmp(tbb,taaa) --> -1
+strCmp(tbb,tbb) --> 0
+strCmp(tbb,tix) --> 1
+strCmp(tbb,taaab) --> -1
+strCmp(tbb,taa0) --> -1
+strCmp(tbb,tbb) --> 0
+strCmp(tbb,) --> -1
+strLen(tix) --> 3
+strCmp(tix,sar) --> -1
+strCmp(tix,23) --> -1
+strCmp(tix,taaa) --> -1
+strCmp(tix,tbb) --> -1
+strCmp(tix,tix) --> 0
+strCmp(tix,taaab) --> -1
+strCmp(tix,taa0) --> -1
+strCmp(tix,tbb) --> -1
+strCmp(tix,) --> -1
+strLen(taaab) --> 5
+strCmp(taaab,sar) --> -1
+strCmp(taaab,23) --> -1
+strCmp(taaab,taaa) --> -1
+strCmp(taaab,tbb) --> 1
+strCmp(taaab,tix) --> 1
+strCmp(taaab,taaab) --> 0
+strCmp(taaab,taa0) --> -1
+strCmp(taaab,tbb) --> 1
+strCmp(taaab,) --> -1
+strLen(taa0) --> 4
+strCmp(taa0,sar) --> -1
+strCmp(taa0,23) --> -1
+strCmp(taa0,taaa) --> 1
+strCmp(taa0,tbb) --> 1
+strCmp(taa0,tix) --> 1
+strCmp(taa0,taaab) --> 1
+strCmp(taa0,taa0) --> 0
+strCmp(taa0,tbb) --> 1
+strCmp(taa0,) --> -1
+strLen(tbb) --> 3
+strCmp(tbb,sar) --> -1
+strCmp(tbb,23) --> -1
+strCmp(tbb,taaa) --> -1
+strCmp(tbb,tbb) --> 0
+strCmp(tbb,tix) --> 1
+strCmp(tbb,taaab) --> -1
+strCmp(tbb,taa0) --> -1
+strCmp(tbb,tbb) --> 0
+strCmp(tbb,) --> -1
+strLen() --> 0
+strCmp(,sar) --> 1
+strCmp(,23) --> 1
+strCmp(,taaa) --> 1
+strCmp(,tbb) --> 1
+strCmp(,tix) --> 1
+strCmp(,taaab) --> 1
+strCmp(,taa0) --> 1
+strCmp(,tbb) --> 1
+strCmp(,) --> 0
+
+== Array ==
+
+Agregar
+
+0 - []
+1 - [aa]
+2 - [aa,bb]
+3 - [aa,bb,dd]
+
+Get
+
+3 - [aa,bb,dd]
+aa
+bb
+dd
+(null)
+
+Quitar
+
+2 - [bb,dd] - aa
+1 - [bb] - dd
+0 - [] - bb
+
+Swap
+
+3 - [aa,bb,dd]
+3 - [aa,bb,dd]
+3 - [aa,bb,dd]
+3 - [aa,bb,dd]
+3 - [dd,bb,aa]
+3 - [aa,bb,dd]
+3 - [bb,dd,aa]
+
+Agregar de mas
+
+3 - [bb,dd,aa]
+4 - [bb,dd,aa,aa]
+5 - [bb,dd,aa,aa,bb]
+6 - [bb,dd,aa,aa,bb,dd]
+7 - [bb,dd,aa,aa,bb,dd,ff]
+8 - [bb,dd,aa,aa,bb,dd,ff,00]
+9 - [bb,dd,aa,aa,bb,dd,ff,00,zz]
+10 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc]
+11 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee]
+12 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg]
+13 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh]
+14 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa]
+15 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb]
+16 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd]
+17 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff]
+18 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00]
+19 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz]
+20 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc]
+20 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc]
+20 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc]
+20 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc]
+20 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc]
+20 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc]
+20 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc]
+20 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc]
+20 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc]
+20 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc]
+20 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc]
+20 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc]
+20 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc]
+20 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc]
+
+Quitar de mas
+
+20 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc]
+19 - [dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc] - bb
+18 - [dd,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc] - aa
+17 - [dd,aa,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc] - bb
+16 - [dd,aa,dd,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc] - ff
+15 - [dd,aa,dd,00,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc] - zz
+14 - [dd,aa,dd,00,cc,gg,hh,aa,bb,dd,ff,00,zz,cc] - ee
+13 - [dd,aa,dd,00,cc,gg,aa,bb,dd,ff,00,zz,cc] - hh
+12 - [dd,aa,dd,00,cc,gg,aa,dd,ff,00,zz,cc] - bb
+11 - [dd,aa,dd,00,cc,gg,aa,dd,00,zz,cc] - ff
+10 - [dd,aa,dd,00,cc,gg,aa,dd,00,cc] - zz
+9 - [aa,dd,00,cc,gg,aa,dd,00,cc] - dd
+8 - [aa,00,cc,gg,aa,dd,00,cc] - dd
+7 - [aa,00,gg,aa,dd,00,cc] - cc
+6 - [aa,00,gg,dd,00,cc] - aa
+5 - [aa,00,gg,dd,cc] - 00
+5 - [aa,00,gg,dd,cc] - (null)
+5 - [aa,00,gg,dd,cc] - (null)
+5 - [aa,00,gg,dd,cc] - (null)
+5 - [aa,00,gg,dd,cc] - (null)
+5 - [aa,00,gg,dd,cc] - (null)
+4 - [00,gg,dd,cc] - aa
+3 - [00,dd,cc] - gg
+2 - [00,dd] - cc
+2 - [00,dd] - (null)
+2 - [00,dd] - (null)
+2 - [00,dd] - (null)
+2 - [00,dd] - (null)
+2 - [00,dd] - (null)
+2 - [00,dd] - (null)
+2 - [00,dd] - (null)
+1 - [dd] - 00
+0 - [] - dd
+0 - [] - (null)
+
+Delete
+
+0 - []
+10 - [aa,bb,dd,ff,00,zz,cc,ee,gg,hh]
+
+== List ==
+
+Agregar
+
+0 - []
+1 - [aa]
+2 - [aa,bb]
+3 - [aa,bb,dd]
+0 - []
+1 - [0]
+2 - [1,0]
+3 - [2,1,0]
+4 - [3,2,1,0]
+5 - [4,3,2,1,0]
+6 - [5,4,3,2,1,0]
+7 - [6,5,4,3,2,1,0]
+8 - [7,6,5,4,3,2,1,0]
+9 - [8,7,6,5,4,3,2,1,0]
+10 - [9,8,7,6,5,4,3,2,1,0]
+11 - [10,9,8,7,6,5,4,3,2,1,0]
+12 - [11,10,9,8,7,6,5,4,3,2,1,0]
+13 - [12,11,10,9,8,7,6,5,4,3,2,1,0]
+14 - [13,12,11,10,9,8,7,6,5,4,3,2,1,0]
+15 - [14,13,12,11,10,9,8,7,6,5,4,3,2,1,0]
+16 - [15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0]
+17 - [16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0]
+18 - [17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0]
+19 - [18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0]
+20 - [19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0]
+
+Get
+
+3 - [aa,bb,dd]
+aa
+bb
+dd
+(null)
+
+Quitar
+
+2 - [bb,dd] - aa
+1 - [bb] - dd
+0 - [] - bb
+
+Swap
+
+3 - [aa,bb,dd]
+3 - [aa,bb,dd]
+3 - [aa,bb,dd]
+3 - [aa,bb,dd]
+3 - [dd,bb,aa]
+3 - [aa,bb,dd]
+3 - [bb,dd,aa]
+
+Agregar 2
+
+3 - [bb,dd,aa]
+4 - [bb,dd,aa,aa]
+5 - [bb,dd,aa,aa,bb]
+6 - [bb,dd,aa,aa,bb,dd]
+7 - [bb,dd,aa,aa,bb,dd,ff]
+8 - [bb,dd,aa,aa,bb,dd,ff,00]
+9 - [bb,dd,aa,aa,bb,dd,ff,00,zz]
+10 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc]
+11 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee]
+12 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg]
+13 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh]
+14 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa]
+15 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb]
+16 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd]
+17 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff]
+18 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00]
+19 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz]
+20 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc]
+21 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee]
+22 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg]
+23 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg,hh]
+24 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa]
+25 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb]
+26 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd]
+27 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff]
+28 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00]
+29 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz]
+30 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc]
+31 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee]
+32 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg]
+33 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg,hh]
+
+Quitar de mas
+
+33 - [bb,dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg,hh]
+32 - [dd,aa,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg,hh] - bb
+31 - [dd,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg,hh] - aa
+30 - [dd,aa,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg,hh] - bb
+29 - [dd,aa,dd,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg,hh] - ff
+28 - [dd,aa,dd,00,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg,hh] - zz
+27 - [dd,aa,dd,00,cc,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg,hh] - ee
+26 - [dd,aa,dd,00,cc,gg,aa,bb,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg,hh] - hh
+25 - [dd,aa,dd,00,cc,gg,aa,dd,ff,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg,hh] - bb
+24 - [dd,aa,dd,00,cc,gg,aa,dd,00,zz,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg,hh] - ff
+23 - [dd,aa,dd,00,cc,gg,aa,dd,00,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg,hh] - zz
+22 - [aa,dd,00,cc,gg,aa,dd,00,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg,hh] - dd
+21 - [aa,00,cc,gg,aa,dd,00,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg,hh] - dd
+20 - [aa,00,gg,aa,dd,00,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg,hh] - cc
+19 - [aa,00,gg,dd,00,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg,hh] - aa
+18 - [aa,00,gg,dd,cc,ee,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg,hh] - 00
+17 - [aa,00,gg,dd,cc,gg,hh,aa,bb,dd,ff,00,zz,cc,ee,gg,hh] - ee
+16 - [aa,00,gg,dd,cc,gg,aa,bb,dd,ff,00,zz,cc,ee,gg,hh] - hh
+15 - [aa,00,gg,dd,cc,gg,aa,dd,ff,00,zz,cc,ee,gg,hh] - bb
+14 - [aa,00,gg,dd,cc,gg,aa,dd,00,zz,cc,ee,gg,hh] - ff
+13 - [aa,00,gg,dd,cc,gg,aa,dd,00,cc,ee,gg,hh] - zz
+12 - [00,gg,dd,cc,gg,aa,dd,00,cc,ee,gg,hh] - aa
+11 - [00,dd,cc,gg,aa,dd,00,cc,ee,gg,hh] - gg
+10 - [00,dd,gg,aa,dd,00,cc,ee,gg,hh] - cc
+9 - [00,dd,gg,dd,00,cc,ee,gg,hh] - aa
+8 - [00,dd,gg,dd,cc,ee,gg,hh] - 00
+7 - [00,dd,gg,dd,cc,gg,hh] - ee
+6 - [00,dd,gg,dd,cc,gg] - hh
+6 - [00,dd,gg,dd,cc,gg] - (null)
+6 - [00,dd,gg,dd,cc,gg] - (null)
+6 - [00,dd,gg,dd,cc,gg] - (null)
+5 - [dd,gg,dd,cc,gg] - 00
+4 - [gg,dd,cc,gg] - dd
+3 - [dd,cc,gg] - gg
+2 - [cc,gg] - dd
+1 - [gg] - cc
+0 - [] - gg
+0 - [] - (null)
+0 - [] - (null)
+0 - [] - (null)
+0 - [] - (null)
+
+Delete
+
+0 - []
+10 - [aa,bb,dd,ff,00,zz,cc,ee,gg,hh]
+
+== Card ==
+
+Nueva
+
+{espada-1-[]}
+Comparar
+
+[{espada-1-[]}]
+[{espada-1-[]}]
+[{espada-1-[]},{espada-2-[]}]
+[{espada-1-[]},{espada-2-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]},{copa-7-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]},{copa-7-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]},{copa-7-[]},{copa-8-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]},{copa-7-[]},{copa-8-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]},{copa-7-[]},{copa-8-[]},{copa-9-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]},{copa-7-[]},{copa-8-[]},{copa-9-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]},{copa-7-[]},{copa-8-[]},{copa-9-[]},{copa-10-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]},{copa-7-[]},{copa-8-[]},{copa-9-[]},{copa-10-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]},{copa-7-[]},{copa-8-[]},{copa-9-[]},{copa-10-[]},{copa-11-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]},{copa-7-[]},{copa-8-[]},{copa-9-[]},{copa-10-[]},{copa-11-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]},{copa-7-[]},{copa-8-[]},{copa-9-[]},{copa-10-[]},{copa-11-[]},{copa-12-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]},{copa-7-[]},{copa-8-[]},{copa-9-[]},{copa-10-[]},{copa-11-[]},{copa-12-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]},{copa-7-[]},{copa-8-[]},{copa-9-[]},{copa-10-[]},{copa-11-[]},{copa-12-[]},{oro-1-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]},{copa-7-[]},{copa-8-[]},{copa-9-[]},{copa-10-[]},{copa-11-[]},{copa-12-[]},{oro-1-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]},{copa-7-[]},{copa-8-[]},{copa-9-[]},{copa-10-[]},{copa-11-[]},{copa-12-[]},{oro-1-[]},{oro-2-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]},{copa-7-[]},{copa-8-[]},{copa-9-[]},{copa-10-[]},{copa-11-[]},{copa-12-[]},{oro-1-[]},{oro-2-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]},{copa-7-[]},{copa-8-[]},{copa-9-[]},{copa-10-[]},{copa-11-[]},{copa-12-[]},{oro-1-[]},{oro-2-[]},{oro-3-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]},{copa-7-[]},{copa-8-[]},{copa-9-[]},{copa-10-[]},{copa-11-[]},{copa-12-[]},{oro-1-[]},{oro-2-[]},{oro-3-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]},{copa-7-[]},{copa-8-[]},{copa-9-[]},{copa-10-[]},{copa-11-[]},{copa-12-[]},{oro-1-[]},{oro-2-[]},{oro-3-[]},{oro-4-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]},{copa-7-[]},{copa-8-[]},{copa-9-[]},{copa-10-[]},{copa-11-[]},{copa-12-[]},{oro-1-[]},{oro-2-[]},{oro-3-[]},{oro-4-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]},{copa-7-[]},{copa-8-[]},{copa-9-[]},{copa-10-[]},{copa-11-[]},{copa-12-[]},{oro-1-[]},{oro-2-[]},{oro-3-[]},{oro-4-[]},{oro-5-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]},{copa-7-[]},{copa-8-[]},{copa-9-[]},{copa-10-[]},{copa-11-[]},{copa-12-[]},{oro-1-[]},{oro-2-[]},{oro-3-[]},{oro-4-[]},{oro-5-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]},{copa-7-[]},{copa-8-[]},{copa-9-[]},{copa-10-[]},{copa-11-[]},{copa-12-[]},{oro-1-[]},{oro-2-[]},{oro-3-[]},{oro-4-[]},{oro-5-[]},{oro-6-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]},{copa-7-[]},{copa-8-[]},{copa-9-[]},{copa-10-[]},{copa-11-[]},{copa-12-[]},{oro-1-[]},{oro-2-[]},{oro-3-[]},{oro-4-[]},{oro-5-[]},{oro-6-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]},{copa-7-[]},{copa-8-[]},{copa-9-[]},{copa-10-[]},{copa-11-[]},{copa-12-[]},{oro-1-[]},{oro-2-[]},{oro-3-[]},{oro-4-[]},{oro-5-[]},{oro-6-[]},{oro-7-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]},{copa-7-[]},{copa-8-[]},{copa-9-[]},{copa-10-[]},{copa-11-[]},{copa-12-[]},{oro-1-[]},{oro-2-[]},{oro-3-[]},{oro-4-[]},{oro-5-[]},{oro-6-[]},{oro-7-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]},{copa-7-[]},{copa-8-[]},{copa-9-[]},{copa-10-[]},{copa-11-[]},{copa-12-[]},{oro-1-[]},{oro-2-[]},{oro-3-[]},{oro-4-[]},{oro-5-[]},{oro-6-[]},{oro-7-[]},{oro-8-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]},{copa-7-[]},{copa-8-[]},{copa-9-[]},{copa-10-[]},{copa-11-[]},{copa-12-[]},{oro-1-[]},{oro-2-[]},{oro-3-[]},{oro-4-[]},{oro-5-[]},{oro-6-[]},{oro-7-[]},{oro-8-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]},{copa-7-[]},{copa-8-[]},{copa-9-[]},{copa-10-[]},{copa-11-[]},{copa-12-[]},{oro-1-[]},{oro-2-[]},{oro-3-[]},{oro-4-[]},{oro-5-[]},{oro-6-[]},{oro-7-[]},{oro-8-[]},{oro-9-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]},{copa-7-[]},{copa-8-[]},{copa-9-[]},{copa-10-[]},{copa-11-[]},{copa-12-[]},{oro-1-[]},{oro-2-[]},{oro-3-[]},{oro-4-[]},{oro-5-[]},{oro-6-[]},{oro-7-[]},{oro-8-[]},{oro-9-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]},{copa-7-[]},{copa-8-[]},{copa-9-[]},{copa-10-[]},{copa-11-[]},{copa-12-[]},{oro-1-[]},{oro-2-[]},{oro-3-[]},{oro-4-[]},{oro-5-[]},{oro-6-[]},{oro-7-[]},{oro-8-[]},{oro-9-[]},{oro-10-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]},{copa-7-[]},{copa-8-[]},{copa-9-[]},{copa-10-[]},{copa-11-[]},{copa-12-[]},{oro-1-[]},{oro-2-[]},{oro-3-[]},{oro-4-[]},{oro-5-[]},{oro-6-[]},{oro-7-[]},{oro-8-[]},{oro-9-[]},{oro-10-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]},{copa-7-[]},{copa-8-[]},{copa-9-[]},{copa-10-[]},{copa-11-[]},{copa-12-[]},{oro-1-[]},{oro-2-[]},{oro-3-[]},{oro-4-[]},{oro-5-[]},{oro-6-[]},{oro-7-[]},{oro-8-[]},{oro-9-[]},{oro-10-[]},{oro-11-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]},{copa-7-[]},{copa-8-[]},{copa-9-[]},{copa-10-[]},{copa-11-[]},{copa-12-[]},{oro-1-[]},{oro-2-[]},{oro-3-[]},{oro-4-[]},{oro-5-[]},{oro-6-[]},{oro-7-[]},{oro-8-[]},{oro-9-[]},{oro-10-[]},{oro-11-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]},{copa-7-[]},{copa-8-[]},{copa-9-[]},{copa-10-[]},{copa-11-[]},{copa-12-[]},{oro-1-[]},{oro-2-[]},{oro-3-[]},{oro-4-[]},{oro-5-[]},{oro-6-[]},{oro-7-[]},{oro-8-[]},{oro-9-[]},{oro-10-[]},{oro-11-[]},{oro-12-[]}]
+[{espada-1-[]},{espada-2-[]},{espada-3-[]},{espada-4-[]},{espada-5-[]},{espada-6-[]},{espada-7-[]},{espada-8-[]},{espada-9-[]},{espada-10-[]},{espada-11-[]},{espada-12-[]},{basto-1-[]},{basto-2-[]},{basto-3-[]},{basto-4-[]},{basto-5-[]},{basto-6-[]},{basto-7-[]},{basto-8-[]},{basto-9-[]},{basto-10-[]},{basto-11-[]},{basto-12-[]},{copa-1-[]},{copa-2-[]},{copa-3-[]},{copa-4-[]},{copa-5-[]},{copa-6-[]},{copa-7-[]},{copa-8-[]},{copa-9-[]},{copa-10-[]},{copa-11-[]},{copa-12-[]},{oro-1-[]},{oro-2-[]},{oro-3-[]},{oro-4-[]},{oro-5-[]},{oro-6-[]},{oro-7-[]},{oro-8-[]},{oro-9-[]},{oro-10-[]},{oro-11-[]},{oro-12-[]}]
+
+{espada-1-[]} cmp {espada-1-[]} -> 0
+{espada-1-[]} cmp {espada-2-[]} -> 1
+{espada-1-[]} cmp {espada-3-[]} -> 1
+{espada-1-[]} cmp {espada-4-[]} -> 1
+{espada-1-[]} cmp {espada-5-[]} -> 1
+{espada-1-[]} cmp {espada-6-[]} -> 1
+{espada-1-[]} cmp {espada-7-[]} -> 1
+{espada-1-[]} cmp {espada-8-[]} -> 1
+{espada-1-[]} cmp {espada-9-[]} -> 1
+{espada-1-[]} cmp {espada-10-[]} -> 1
+{espada-1-[]} cmp {espada-11-[]} -> 1
+{espada-1-[]} cmp {espada-12-[]} -> 1
+{espada-1-[]} cmp {basto-1-[]} -> -1
+{espada-1-[]} cmp {basto-2-[]} -> -1
+{espada-1-[]} cmp {basto-3-[]} -> -1
+{espada-1-[]} cmp {basto-4-[]} -> -1
+{espada-1-[]} cmp {basto-5-[]} -> -1
+{espada-1-[]} cmp {basto-6-[]} -> -1
+{espada-1-[]} cmp {basto-7-[]} -> -1
+{espada-1-[]} cmp {basto-8-[]} -> -1
+{espada-1-[]} cmp {basto-9-[]} -> -1
+{espada-1-[]} cmp {basto-10-[]} -> -1
+{espada-1-[]} cmp {basto-11-[]} -> -1
+{espada-1-[]} cmp {basto-12-[]} -> -1
+{espada-1-[]} cmp {copa-1-[]} -> -1
+{espada-1-[]} cmp {copa-2-[]} -> -1
+{espada-1-[]} cmp {copa-3-[]} -> -1
+{espada-1-[]} cmp {copa-4-[]} -> -1
+{espada-1-[]} cmp {copa-5-[]} -> -1
+{espada-1-[]} cmp {copa-6-[]} -> -1
+{espada-1-[]} cmp {copa-7-[]} -> -1
+{espada-1-[]} cmp {copa-8-[]} -> -1
+{espada-1-[]} cmp {copa-9-[]} -> -1
+{espada-1-[]} cmp {copa-10-[]} -> -1
+{espada-1-[]} cmp {copa-11-[]} -> -1
+{espada-1-[]} cmp {copa-12-[]} -> -1
+{espada-1-[]} cmp {oro-1-[]} -> 1
+{espada-1-[]} cmp {oro-2-[]} -> 1
+{espada-1-[]} cmp {oro-3-[]} -> 1
+{espada-1-[]} cmp {oro-4-[]} -> 1
+{espada-1-[]} cmp {oro-5-[]} -> 1
+{espada-1-[]} cmp {oro-6-[]} -> 1
+{espada-1-[]} cmp {oro-7-[]} -> 1
+{espada-1-[]} cmp {oro-8-[]} -> 1
+{espada-1-[]} cmp {oro-9-[]} -> 1
+{espada-1-[]} cmp {oro-10-[]} -> 1
+{espada-1-[]} cmp {oro-11-[]} -> 1
+{espada-1-[]} cmp {oro-12-[]} -> 1
+{espada-2-[]} cmp {espada-1-[]} -> -1
+{espada-2-[]} cmp {espada-2-[]} -> 0
+{espada-2-[]} cmp {espada-3-[]} -> 1
+{espada-2-[]} cmp {espada-4-[]} -> 1
+{espada-2-[]} cmp {espada-5-[]} -> 1
+{espada-2-[]} cmp {espada-6-[]} -> 1
+{espada-2-[]} cmp {espada-7-[]} -> 1
+{espada-2-[]} cmp {espada-8-[]} -> 1
+{espada-2-[]} cmp {espada-9-[]} -> 1
+{espada-2-[]} cmp {espada-10-[]} -> 1
+{espada-2-[]} cmp {espada-11-[]} -> 1
+{espada-2-[]} cmp {espada-12-[]} -> 1
+{espada-2-[]} cmp {basto-1-[]} -> -1
+{espada-2-[]} cmp {basto-2-[]} -> -1
+{espada-2-[]} cmp {basto-3-[]} -> -1
+{espada-2-[]} cmp {basto-4-[]} -> -1
+{espada-2-[]} cmp {basto-5-[]} -> -1
+{espada-2-[]} cmp {basto-6-[]} -> -1
+{espada-2-[]} cmp {basto-7-[]} -> -1
+{espada-2-[]} cmp {basto-8-[]} -> -1
+{espada-2-[]} cmp {basto-9-[]} -> -1
+{espada-2-[]} cmp {basto-10-[]} -> -1
+{espada-2-[]} cmp {basto-11-[]} -> -1
+{espada-2-[]} cmp {basto-12-[]} -> -1
+{espada-2-[]} cmp {copa-1-[]} -> -1
+{espada-2-[]} cmp {copa-2-[]} -> -1
+{espada-2-[]} cmp {copa-3-[]} -> -1
+{espada-2-[]} cmp {copa-4-[]} -> -1
+{espada-2-[]} cmp {copa-5-[]} -> -1
+{espada-2-[]} cmp {copa-6-[]} -> -1
+{espada-2-[]} cmp {copa-7-[]} -> -1
+{espada-2-[]} cmp {copa-8-[]} -> -1
+{espada-2-[]} cmp {copa-9-[]} -> -1
+{espada-2-[]} cmp {copa-10-[]} -> -1
+{espada-2-[]} cmp {copa-11-[]} -> -1
+{espada-2-[]} cmp {copa-12-[]} -> -1
+{espada-2-[]} cmp {oro-1-[]} -> 1
+{espada-2-[]} cmp {oro-2-[]} -> 1
+{espada-2-[]} cmp {oro-3-[]} -> 1
+{espada-2-[]} cmp {oro-4-[]} -> 1
+{espada-2-[]} cmp {oro-5-[]} -> 1
+{espada-2-[]} cmp {oro-6-[]} -> 1
+{espada-2-[]} cmp {oro-7-[]} -> 1
+{espada-2-[]} cmp {oro-8-[]} -> 1
+{espada-2-[]} cmp {oro-9-[]} -> 1
+{espada-2-[]} cmp {oro-10-[]} -> 1
+{espada-2-[]} cmp {oro-11-[]} -> 1
+{espada-2-[]} cmp {oro-12-[]} -> 1
+{espada-3-[]} cmp {espada-1-[]} -> -1
+{espada-3-[]} cmp {espada-2-[]} -> -1
+{espada-3-[]} cmp {espada-3-[]} -> 0
+{espada-3-[]} cmp {espada-4-[]} -> 1
+{espada-3-[]} cmp {espada-5-[]} -> 1
+{espada-3-[]} cmp {espada-6-[]} -> 1
+{espada-3-[]} cmp {espada-7-[]} -> 1
+{espada-3-[]} cmp {espada-8-[]} -> 1
+{espada-3-[]} cmp {espada-9-[]} -> 1
+{espada-3-[]} cmp {espada-10-[]} -> 1
+{espada-3-[]} cmp {espada-11-[]} -> 1
+{espada-3-[]} cmp {espada-12-[]} -> 1
+{espada-3-[]} cmp {basto-1-[]} -> -1
+{espada-3-[]} cmp {basto-2-[]} -> -1
+{espada-3-[]} cmp {basto-3-[]} -> -1
+{espada-3-[]} cmp {basto-4-[]} -> -1
+{espada-3-[]} cmp {basto-5-[]} -> -1
+{espada-3-[]} cmp {basto-6-[]} -> -1
+{espada-3-[]} cmp {basto-7-[]} -> -1
+{espada-3-[]} cmp {basto-8-[]} -> -1
+{espada-3-[]} cmp {basto-9-[]} -> -1
+{espada-3-[]} cmp {basto-10-[]} -> -1
+{espada-3-[]} cmp {basto-11-[]} -> -1
+{espada-3-[]} cmp {basto-12-[]} -> -1
+{espada-3-[]} cmp {copa-1-[]} -> -1
+{espada-3-[]} cmp {copa-2-[]} -> -1
+{espada-3-[]} cmp {copa-3-[]} -> -1
+{espada-3-[]} cmp {copa-4-[]} -> -1
+{espada-3-[]} cmp {copa-5-[]} -> -1
+{espada-3-[]} cmp {copa-6-[]} -> -1
+{espada-3-[]} cmp {copa-7-[]} -> -1
+{espada-3-[]} cmp {copa-8-[]} -> -1
+{espada-3-[]} cmp {copa-9-[]} -> -1
+{espada-3-[]} cmp {copa-10-[]} -> -1
+{espada-3-[]} cmp {copa-11-[]} -> -1
+{espada-3-[]} cmp {copa-12-[]} -> -1
+{espada-3-[]} cmp {oro-1-[]} -> 1
+{espada-3-[]} cmp {oro-2-[]} -> 1
+{espada-3-[]} cmp {oro-3-[]} -> 1
+{espada-3-[]} cmp {oro-4-[]} -> 1
+{espada-3-[]} cmp {oro-5-[]} -> 1
+{espada-3-[]} cmp {oro-6-[]} -> 1
+{espada-3-[]} cmp {oro-7-[]} -> 1
+{espada-3-[]} cmp {oro-8-[]} -> 1
+{espada-3-[]} cmp {oro-9-[]} -> 1
+{espada-3-[]} cmp {oro-10-[]} -> 1
+{espada-3-[]} cmp {oro-11-[]} -> 1
+{espada-3-[]} cmp {oro-12-[]} -> 1
+{espada-4-[]} cmp {espada-1-[]} -> -1
+{espada-4-[]} cmp {espada-2-[]} -> -1
+{espada-4-[]} cmp {espada-3-[]} -> -1
+{espada-4-[]} cmp {espada-4-[]} -> 0
+{espada-4-[]} cmp {espada-5-[]} -> 1
+{espada-4-[]} cmp {espada-6-[]} -> 1
+{espada-4-[]} cmp {espada-7-[]} -> 1
+{espada-4-[]} cmp {espada-8-[]} -> 1
+{espada-4-[]} cmp {espada-9-[]} -> 1
+{espada-4-[]} cmp {espada-10-[]} -> 1
+{espada-4-[]} cmp {espada-11-[]} -> 1
+{espada-4-[]} cmp {espada-12-[]} -> 1
+{espada-4-[]} cmp {basto-1-[]} -> -1
+{espada-4-[]} cmp {basto-2-[]} -> -1
+{espada-4-[]} cmp {basto-3-[]} -> -1
+{espada-4-[]} cmp {basto-4-[]} -> -1
+{espada-4-[]} cmp {basto-5-[]} -> -1
+{espada-4-[]} cmp {basto-6-[]} -> -1
+{espada-4-[]} cmp {basto-7-[]} -> -1
+{espada-4-[]} cmp {basto-8-[]} -> -1
+{espada-4-[]} cmp {basto-9-[]} -> -1
+{espada-4-[]} cmp {basto-10-[]} -> -1
+{espada-4-[]} cmp {basto-11-[]} -> -1
+{espada-4-[]} cmp {basto-12-[]} -> -1
+{espada-4-[]} cmp {copa-1-[]} -> -1
+{espada-4-[]} cmp {copa-2-[]} -> -1
+{espada-4-[]} cmp {copa-3-[]} -> -1
+{espada-4-[]} cmp {copa-4-[]} -> -1
+{espada-4-[]} cmp {copa-5-[]} -> -1
+{espada-4-[]} cmp {copa-6-[]} -> -1
+{espada-4-[]} cmp {copa-7-[]} -> -1
+{espada-4-[]} cmp {copa-8-[]} -> -1
+{espada-4-[]} cmp {copa-9-[]} -> -1
+{espada-4-[]} cmp {copa-10-[]} -> -1
+{espada-4-[]} cmp {copa-11-[]} -> -1
+{espada-4-[]} cmp {copa-12-[]} -> -1
+{espada-4-[]} cmp {oro-1-[]} -> 1
+{espada-4-[]} cmp {oro-2-[]} -> 1
+{espada-4-[]} cmp {oro-3-[]} -> 1
+{espada-4-[]} cmp {oro-4-[]} -> 1
+{espada-4-[]} cmp {oro-5-[]} -> 1
+{espada-4-[]} cmp {oro-6-[]} -> 1
+{espada-4-[]} cmp {oro-7-[]} -> 1
+{espada-4-[]} cmp {oro-8-[]} -> 1
+{espada-4-[]} cmp {oro-9-[]} -> 1
+{espada-4-[]} cmp {oro-10-[]} -> 1
+{espada-4-[]} cmp {oro-11-[]} -> 1
+{espada-4-[]} cmp {oro-12-[]} -> 1
+{espada-5-[]} cmp {espada-1-[]} -> -1
+{espada-5-[]} cmp {espada-2-[]} -> -1
+{espada-5-[]} cmp {espada-3-[]} -> -1
+{espada-5-[]} cmp {espada-4-[]} -> -1
+{espada-5-[]} cmp {espada-5-[]} -> 0
+{espada-5-[]} cmp {espada-6-[]} -> 1
+{espada-5-[]} cmp {espada-7-[]} -> 1
+{espada-5-[]} cmp {espada-8-[]} -> 1
+{espada-5-[]} cmp {espada-9-[]} -> 1
+{espada-5-[]} cmp {espada-10-[]} -> 1
+{espada-5-[]} cmp {espada-11-[]} -> 1
+{espada-5-[]} cmp {espada-12-[]} -> 1
+{espada-5-[]} cmp {basto-1-[]} -> -1
+{espada-5-[]} cmp {basto-2-[]} -> -1
+{espada-5-[]} cmp {basto-3-[]} -> -1
+{espada-5-[]} cmp {basto-4-[]} -> -1
+{espada-5-[]} cmp {basto-5-[]} -> -1
+{espada-5-[]} cmp {basto-6-[]} -> -1
+{espada-5-[]} cmp {basto-7-[]} -> -1
+{espada-5-[]} cmp {basto-8-[]} -> -1
+{espada-5-[]} cmp {basto-9-[]} -> -1
+{espada-5-[]} cmp {basto-10-[]} -> -1
+{espada-5-[]} cmp {basto-11-[]} -> -1
+{espada-5-[]} cmp {basto-12-[]} -> -1
+{espada-5-[]} cmp {copa-1-[]} -> -1
+{espada-5-[]} cmp {copa-2-[]} -> -1
+{espada-5-[]} cmp {copa-3-[]} -> -1
+{espada-5-[]} cmp {copa-4-[]} -> -1
+{espada-5-[]} cmp {copa-5-[]} -> -1
+{espada-5-[]} cmp {copa-6-[]} -> -1
+{espada-5-[]} cmp {copa-7-[]} -> -1
+{espada-5-[]} cmp {copa-8-[]} -> -1
+{espada-5-[]} cmp {copa-9-[]} -> -1
+{espada-5-[]} cmp {copa-10-[]} -> -1
+{espada-5-[]} cmp {copa-11-[]} -> -1
+{espada-5-[]} cmp {copa-12-[]} -> -1
+{espada-5-[]} cmp {oro-1-[]} -> 1
+{espada-5-[]} cmp {oro-2-[]} -> 1
+{espada-5-[]} cmp {oro-3-[]} -> 1
+{espada-5-[]} cmp {oro-4-[]} -> 1
+{espada-5-[]} cmp {oro-5-[]} -> 1
+{espada-5-[]} cmp {oro-6-[]} -> 1
+{espada-5-[]} cmp {oro-7-[]} -> 1
+{espada-5-[]} cmp {oro-8-[]} -> 1
+{espada-5-[]} cmp {oro-9-[]} -> 1
+{espada-5-[]} cmp {oro-10-[]} -> 1
+{espada-5-[]} cmp {oro-11-[]} -> 1
+{espada-5-[]} cmp {oro-12-[]} -> 1
+{espada-6-[]} cmp {espada-1-[]} -> -1
+{espada-6-[]} cmp {espada-2-[]} -> -1
+{espada-6-[]} cmp {espada-3-[]} -> -1
+{espada-6-[]} cmp {espada-4-[]} -> -1
+{espada-6-[]} cmp {espada-5-[]} -> -1
+{espada-6-[]} cmp {espada-6-[]} -> 0
+{espada-6-[]} cmp {espada-7-[]} -> 1
+{espada-6-[]} cmp {espada-8-[]} -> 1
+{espada-6-[]} cmp {espada-9-[]} -> 1
+{espada-6-[]} cmp {espada-10-[]} -> 1
+{espada-6-[]} cmp {espada-11-[]} -> 1
+{espada-6-[]} cmp {espada-12-[]} -> 1
+{espada-6-[]} cmp {basto-1-[]} -> -1
+{espada-6-[]} cmp {basto-2-[]} -> -1
+{espada-6-[]} cmp {basto-3-[]} -> -1
+{espada-6-[]} cmp {basto-4-[]} -> -1
+{espada-6-[]} cmp {basto-5-[]} -> -1
+{espada-6-[]} cmp {basto-6-[]} -> -1
+{espada-6-[]} cmp {basto-7-[]} -> -1
+{espada-6-[]} cmp {basto-8-[]} -> -1
+{espada-6-[]} cmp {basto-9-[]} -> -1
+{espada-6-[]} cmp {basto-10-[]} -> -1
+{espada-6-[]} cmp {basto-11-[]} -> -1
+{espada-6-[]} cmp {basto-12-[]} -> -1
+{espada-6-[]} cmp {copa-1-[]} -> -1
+{espada-6-[]} cmp {copa-2-[]} -> -1
+{espada-6-[]} cmp {copa-3-[]} -> -1
+{espada-6-[]} cmp {copa-4-[]} -> -1
+{espada-6-[]} cmp {copa-5-[]} -> -1
+{espada-6-[]} cmp {copa-6-[]} -> -1
+{espada-6-[]} cmp {copa-7-[]} -> -1
+{espada-6-[]} cmp {copa-8-[]} -> -1
+{espada-6-[]} cmp {copa-9-[]} -> -1
+{espada-6-[]} cmp {copa-10-[]} -> -1
+{espada-6-[]} cmp {copa-11-[]} -> -1
+{espada-6-[]} cmp {copa-12-[]} -> -1
+{espada-6-[]} cmp {oro-1-[]} -> 1
+{espada-6-[]} cmp {oro-2-[]} -> 1
+{espada-6-[]} cmp {oro-3-[]} -> 1
+{espada-6-[]} cmp {oro-4-[]} -> 1
+{espada-6-[]} cmp {oro-5-[]} -> 1
+{espada-6-[]} cmp {oro-6-[]} -> 1
+{espada-6-[]} cmp {oro-7-[]} -> 1
+{espada-6-[]} cmp {oro-8-[]} -> 1
+{espada-6-[]} cmp {oro-9-[]} -> 1
+{espada-6-[]} cmp {oro-10-[]} -> 1
+{espada-6-[]} cmp {oro-11-[]} -> 1
+{espada-6-[]} cmp {oro-12-[]} -> 1
+{espada-7-[]} cmp {espada-1-[]} -> -1
+{espada-7-[]} cmp {espada-2-[]} -> -1
+{espada-7-[]} cmp {espada-3-[]} -> -1
+{espada-7-[]} cmp {espada-4-[]} -> -1
+{espada-7-[]} cmp {espada-5-[]} -> -1
+{espada-7-[]} cmp {espada-6-[]} -> -1
+{espada-7-[]} cmp {espada-7-[]} -> 0
+{espada-7-[]} cmp {espada-8-[]} -> 1
+{espada-7-[]} cmp {espada-9-[]} -> 1
+{espada-7-[]} cmp {espada-10-[]} -> 1
+{espada-7-[]} cmp {espada-11-[]} -> 1
+{espada-7-[]} cmp {espada-12-[]} -> 1
+{espada-7-[]} cmp {basto-1-[]} -> -1
+{espada-7-[]} cmp {basto-2-[]} -> -1
+{espada-7-[]} cmp {basto-3-[]} -> -1
+{espada-7-[]} cmp {basto-4-[]} -> -1
+{espada-7-[]} cmp {basto-5-[]} -> -1
+{espada-7-[]} cmp {basto-6-[]} -> -1
+{espada-7-[]} cmp {basto-7-[]} -> -1
+{espada-7-[]} cmp {basto-8-[]} -> -1
+{espada-7-[]} cmp {basto-9-[]} -> -1
+{espada-7-[]} cmp {basto-10-[]} -> -1
+{espada-7-[]} cmp {basto-11-[]} -> -1
+{espada-7-[]} cmp {basto-12-[]} -> -1
+{espada-7-[]} cmp {copa-1-[]} -> -1
+{espada-7-[]} cmp {copa-2-[]} -> -1
+{espada-7-[]} cmp {copa-3-[]} -> -1
+{espada-7-[]} cmp {copa-4-[]} -> -1
+{espada-7-[]} cmp {copa-5-[]} -> -1
+{espada-7-[]} cmp {copa-6-[]} -> -1
+{espada-7-[]} cmp {copa-7-[]} -> -1
+{espada-7-[]} cmp {copa-8-[]} -> -1
+{espada-7-[]} cmp {copa-9-[]} -> -1
+{espada-7-[]} cmp {copa-10-[]} -> -1
+{espada-7-[]} cmp {copa-11-[]} -> -1
+{espada-7-[]} cmp {copa-12-[]} -> -1
+{espada-7-[]} cmp {oro-1-[]} -> 1
+{espada-7-[]} cmp {oro-2-[]} -> 1
+{espada-7-[]} cmp {oro-3-[]} -> 1
+{espada-7-[]} cmp {oro-4-[]} -> 1
+{espada-7-[]} cmp {oro-5-[]} -> 1
+{espada-7-[]} cmp {oro-6-[]} -> 1
+{espada-7-[]} cmp {oro-7-[]} -> 1
+{espada-7-[]} cmp {oro-8-[]} -> 1
+{espada-7-[]} cmp {oro-9-[]} -> 1
+{espada-7-[]} cmp {oro-10-[]} -> 1
+{espada-7-[]} cmp {oro-11-[]} -> 1
+{espada-7-[]} cmp {oro-12-[]} -> 1
+{espada-8-[]} cmp {espada-1-[]} -> -1
+{espada-8-[]} cmp {espada-2-[]} -> -1
+{espada-8-[]} cmp {espada-3-[]} -> -1
+{espada-8-[]} cmp {espada-4-[]} -> -1
+{espada-8-[]} cmp {espada-5-[]} -> -1
+{espada-8-[]} cmp {espada-6-[]} -> -1
+{espada-8-[]} cmp {espada-7-[]} -> -1
+{espada-8-[]} cmp {espada-8-[]} -> 0
+{espada-8-[]} cmp {espada-9-[]} -> 1
+{espada-8-[]} cmp {espada-10-[]} -> 1
+{espada-8-[]} cmp {espada-11-[]} -> 1
+{espada-8-[]} cmp {espada-12-[]} -> 1
+{espada-8-[]} cmp {basto-1-[]} -> -1
+{espada-8-[]} cmp {basto-2-[]} -> -1
+{espada-8-[]} cmp {basto-3-[]} -> -1
+{espada-8-[]} cmp {basto-4-[]} -> -1
+{espada-8-[]} cmp {basto-5-[]} -> -1
+{espada-8-[]} cmp {basto-6-[]} -> -1
+{espada-8-[]} cmp {basto-7-[]} -> -1
+{espada-8-[]} cmp {basto-8-[]} -> -1
+{espada-8-[]} cmp {basto-9-[]} -> -1
+{espada-8-[]} cmp {basto-10-[]} -> -1
+{espada-8-[]} cmp {basto-11-[]} -> -1
+{espada-8-[]} cmp {basto-12-[]} -> -1
+{espada-8-[]} cmp {copa-1-[]} -> -1
+{espada-8-[]} cmp {copa-2-[]} -> -1
+{espada-8-[]} cmp {copa-3-[]} -> -1
+{espada-8-[]} cmp {copa-4-[]} -> -1
+{espada-8-[]} cmp {copa-5-[]} -> -1
+{espada-8-[]} cmp {copa-6-[]} -> -1
+{espada-8-[]} cmp {copa-7-[]} -> -1
+{espada-8-[]} cmp {copa-8-[]} -> -1
+{espada-8-[]} cmp {copa-9-[]} -> -1
+{espada-8-[]} cmp {copa-10-[]} -> -1
+{espada-8-[]} cmp {copa-11-[]} -> -1
+{espada-8-[]} cmp {copa-12-[]} -> -1
+{espada-8-[]} cmp {oro-1-[]} -> 1
+{espada-8-[]} cmp {oro-2-[]} -> 1
+{espada-8-[]} cmp {oro-3-[]} -> 1
+{espada-8-[]} cmp {oro-4-[]} -> 1
+{espada-8-[]} cmp {oro-5-[]} -> 1
+{espada-8-[]} cmp {oro-6-[]} -> 1
+{espada-8-[]} cmp {oro-7-[]} -> 1
+{espada-8-[]} cmp {oro-8-[]} -> 1
+{espada-8-[]} cmp {oro-9-[]} -> 1
+{espada-8-[]} cmp {oro-10-[]} -> 1
+{espada-8-[]} cmp {oro-11-[]} -> 1
+{espada-8-[]} cmp {oro-12-[]} -> 1
+{espada-9-[]} cmp {espada-1-[]} -> -1
+{espada-9-[]} cmp {espada-2-[]} -> -1
+{espada-9-[]} cmp {espada-3-[]} -> -1
+{espada-9-[]} cmp {espada-4-[]} -> -1
+{espada-9-[]} cmp {espada-5-[]} -> -1
+{espada-9-[]} cmp {espada-6-[]} -> -1
+{espada-9-[]} cmp {espada-7-[]} -> -1
+{espada-9-[]} cmp {espada-8-[]} -> -1
+{espada-9-[]} cmp {espada-9-[]} -> 0
+{espada-9-[]} cmp {espada-10-[]} -> 1
+{espada-9-[]} cmp {espada-11-[]} -> 1
+{espada-9-[]} cmp {espada-12-[]} -> 1
+{espada-9-[]} cmp {basto-1-[]} -> -1
+{espada-9-[]} cmp {basto-2-[]} -> -1
+{espada-9-[]} cmp {basto-3-[]} -> -1
+{espada-9-[]} cmp {basto-4-[]} -> -1
+{espada-9-[]} cmp {basto-5-[]} -> -1
+{espada-9-[]} cmp {basto-6-[]} -> -1
+{espada-9-[]} cmp {basto-7-[]} -> -1
+{espada-9-[]} cmp {basto-8-[]} -> -1
+{espada-9-[]} cmp {basto-9-[]} -> -1
+{espada-9-[]} cmp {basto-10-[]} -> -1
+{espada-9-[]} cmp {basto-11-[]} -> -1
+{espada-9-[]} cmp {basto-12-[]} -> -1
+{espada-9-[]} cmp {copa-1-[]} -> -1
+{espada-9-[]} cmp {copa-2-[]} -> -1
+{espada-9-[]} cmp {copa-3-[]} -> -1
+{espada-9-[]} cmp {copa-4-[]} -> -1
+{espada-9-[]} cmp {copa-5-[]} -> -1
+{espada-9-[]} cmp {copa-6-[]} -> -1
+{espada-9-[]} cmp {copa-7-[]} -> -1
+{espada-9-[]} cmp {copa-8-[]} -> -1
+{espada-9-[]} cmp {copa-9-[]} -> -1
+{espada-9-[]} cmp {copa-10-[]} -> -1
+{espada-9-[]} cmp {copa-11-[]} -> -1
+{espada-9-[]} cmp {copa-12-[]} -> -1
+{espada-9-[]} cmp {oro-1-[]} -> 1
+{espada-9-[]} cmp {oro-2-[]} -> 1
+{espada-9-[]} cmp {oro-3-[]} -> 1
+{espada-9-[]} cmp {oro-4-[]} -> 1
+{espada-9-[]} cmp {oro-5-[]} -> 1
+{espada-9-[]} cmp {oro-6-[]} -> 1
+{espada-9-[]} cmp {oro-7-[]} -> 1
+{espada-9-[]} cmp {oro-8-[]} -> 1
+{espada-9-[]} cmp {oro-9-[]} -> 1
+{espada-9-[]} cmp {oro-10-[]} -> 1
+{espada-9-[]} cmp {oro-11-[]} -> 1
+{espada-9-[]} cmp {oro-12-[]} -> 1
+{espada-10-[]} cmp {espada-1-[]} -> -1
+{espada-10-[]} cmp {espada-2-[]} -> -1
+{espada-10-[]} cmp {espada-3-[]} -> -1
+{espada-10-[]} cmp {espada-4-[]} -> -1
+{espada-10-[]} cmp {espada-5-[]} -> -1
+{espada-10-[]} cmp {espada-6-[]} -> -1
+{espada-10-[]} cmp {espada-7-[]} -> -1
+{espada-10-[]} cmp {espada-8-[]} -> -1
+{espada-10-[]} cmp {espada-9-[]} -> -1
+{espada-10-[]} cmp {espada-10-[]} -> 0
+{espada-10-[]} cmp {espada-11-[]} -> 1
+{espada-10-[]} cmp {espada-12-[]} -> 1
+{espada-10-[]} cmp {basto-1-[]} -> -1
+{espada-10-[]} cmp {basto-2-[]} -> -1
+{espada-10-[]} cmp {basto-3-[]} -> -1
+{espada-10-[]} cmp {basto-4-[]} -> -1
+{espada-10-[]} cmp {basto-5-[]} -> -1
+{espada-10-[]} cmp {basto-6-[]} -> -1
+{espada-10-[]} cmp {basto-7-[]} -> -1
+{espada-10-[]} cmp {basto-8-[]} -> -1
+{espada-10-[]} cmp {basto-9-[]} -> -1
+{espada-10-[]} cmp {basto-10-[]} -> -1
+{espada-10-[]} cmp {basto-11-[]} -> -1
+{espada-10-[]} cmp {basto-12-[]} -> -1
+{espada-10-[]} cmp {copa-1-[]} -> -1
+{espada-10-[]} cmp {copa-2-[]} -> -1
+{espada-10-[]} cmp {copa-3-[]} -> -1
+{espada-10-[]} cmp {copa-4-[]} -> -1
+{espada-10-[]} cmp {copa-5-[]} -> -1
+{espada-10-[]} cmp {copa-6-[]} -> -1
+{espada-10-[]} cmp {copa-7-[]} -> -1
+{espada-10-[]} cmp {copa-8-[]} -> -1
+{espada-10-[]} cmp {copa-9-[]} -> -1
+{espada-10-[]} cmp {copa-10-[]} -> -1
+{espada-10-[]} cmp {copa-11-[]} -> -1
+{espada-10-[]} cmp {copa-12-[]} -> -1
+{espada-10-[]} cmp {oro-1-[]} -> 1
+{espada-10-[]} cmp {oro-2-[]} -> 1
+{espada-10-[]} cmp {oro-3-[]} -> 1
+{espada-10-[]} cmp {oro-4-[]} -> 1
+{espada-10-[]} cmp {oro-5-[]} -> 1
+{espada-10-[]} cmp {oro-6-[]} -> 1
+{espada-10-[]} cmp {oro-7-[]} -> 1
+{espada-10-[]} cmp {oro-8-[]} -> 1
+{espada-10-[]} cmp {oro-9-[]} -> 1
+{espada-10-[]} cmp {oro-10-[]} -> 1
+{espada-10-[]} cmp {oro-11-[]} -> 1
+{espada-10-[]} cmp {oro-12-[]} -> 1
+{espada-11-[]} cmp {espada-1-[]} -> -1
+{espada-11-[]} cmp {espada-2-[]} -> -1
+{espada-11-[]} cmp {espada-3-[]} -> -1
+{espada-11-[]} cmp {espada-4-[]} -> -1
+{espada-11-[]} cmp {espada-5-[]} -> -1
+{espada-11-[]} cmp {espada-6-[]} -> -1
+{espada-11-[]} cmp {espada-7-[]} -> -1
+{espada-11-[]} cmp {espada-8-[]} -> -1
+{espada-11-[]} cmp {espada-9-[]} -> -1
+{espada-11-[]} cmp {espada-10-[]} -> -1
+{espada-11-[]} cmp {espada-11-[]} -> 0
+{espada-11-[]} cmp {espada-12-[]} -> 1
+{espada-11-[]} cmp {basto-1-[]} -> -1
+{espada-11-[]} cmp {basto-2-[]} -> -1
+{espada-11-[]} cmp {basto-3-[]} -> -1
+{espada-11-[]} cmp {basto-4-[]} -> -1
+{espada-11-[]} cmp {basto-5-[]} -> -1
+{espada-11-[]} cmp {basto-6-[]} -> -1
+{espada-11-[]} cmp {basto-7-[]} -> -1
+{espada-11-[]} cmp {basto-8-[]} -> -1
+{espada-11-[]} cmp {basto-9-[]} -> -1
+{espada-11-[]} cmp {basto-10-[]} -> -1
+{espada-11-[]} cmp {basto-11-[]} -> -1
+{espada-11-[]} cmp {basto-12-[]} -> -1
+{espada-11-[]} cmp {copa-1-[]} -> -1
+{espada-11-[]} cmp {copa-2-[]} -> -1
+{espada-11-[]} cmp {copa-3-[]} -> -1
+{espada-11-[]} cmp {copa-4-[]} -> -1
+{espada-11-[]} cmp {copa-5-[]} -> -1
+{espada-11-[]} cmp {copa-6-[]} -> -1
+{espada-11-[]} cmp {copa-7-[]} -> -1
+{espada-11-[]} cmp {copa-8-[]} -> -1
+{espada-11-[]} cmp {copa-9-[]} -> -1
+{espada-11-[]} cmp {copa-10-[]} -> -1
+{espada-11-[]} cmp {copa-11-[]} -> -1
+{espada-11-[]} cmp {copa-12-[]} -> -1
+{espada-11-[]} cmp {oro-1-[]} -> 1
+{espada-11-[]} cmp {oro-2-[]} -> 1
+{espada-11-[]} cmp {oro-3-[]} -> 1
+{espada-11-[]} cmp {oro-4-[]} -> 1
+{espada-11-[]} cmp {oro-5-[]} -> 1
+{espada-11-[]} cmp {oro-6-[]} -> 1
+{espada-11-[]} cmp {oro-7-[]} -> 1
+{espada-11-[]} cmp {oro-8-[]} -> 1
+{espada-11-[]} cmp {oro-9-[]} -> 1
+{espada-11-[]} cmp {oro-10-[]} -> 1
+{espada-11-[]} cmp {oro-11-[]} -> 1
+{espada-11-[]} cmp {oro-12-[]} -> 1
+{espada-12-[]} cmp {espada-1-[]} -> -1
+{espada-12-[]} cmp {espada-2-[]} -> -1
+{espada-12-[]} cmp {espada-3-[]} -> -1
+{espada-12-[]} cmp {espada-4-[]} -> -1
+{espada-12-[]} cmp {espada-5-[]} -> -1
+{espada-12-[]} cmp {espada-6-[]} -> -1
+{espada-12-[]} cmp {espada-7-[]} -> -1
+{espada-12-[]} cmp {espada-8-[]} -> -1
+{espada-12-[]} cmp {espada-9-[]} -> -1
+{espada-12-[]} cmp {espada-10-[]} -> -1
+{espada-12-[]} cmp {espada-11-[]} -> -1
+{espada-12-[]} cmp {espada-12-[]} -> 0
+{espada-12-[]} cmp {basto-1-[]} -> -1
+{espada-12-[]} cmp {basto-2-[]} -> -1
+{espada-12-[]} cmp {basto-3-[]} -> -1
+{espada-12-[]} cmp {basto-4-[]} -> -1
+{espada-12-[]} cmp {basto-5-[]} -> -1
+{espada-12-[]} cmp {basto-6-[]} -> -1
+{espada-12-[]} cmp {basto-7-[]} -> -1
+{espada-12-[]} cmp {basto-8-[]} -> -1
+{espada-12-[]} cmp {basto-9-[]} -> -1
+{espada-12-[]} cmp {basto-10-[]} -> -1
+{espada-12-[]} cmp {basto-11-[]} -> -1
+{espada-12-[]} cmp {basto-12-[]} -> -1
+{espada-12-[]} cmp {copa-1-[]} -> -1
+{espada-12-[]} cmp {copa-2-[]} -> -1
+{espada-12-[]} cmp {copa-3-[]} -> -1
+{espada-12-[]} cmp {copa-4-[]} -> -1
+{espada-12-[]} cmp {copa-5-[]} -> -1
+{espada-12-[]} cmp {copa-6-[]} -> -1
+{espada-12-[]} cmp {copa-7-[]} -> -1
+{espada-12-[]} cmp {copa-8-[]} -> -1
+{espada-12-[]} cmp {copa-9-[]} -> -1
+{espada-12-[]} cmp {copa-10-[]} -> -1
+{espada-12-[]} cmp {copa-11-[]} -> -1
+{espada-12-[]} cmp {copa-12-[]} -> -1
+{espada-12-[]} cmp {oro-1-[]} -> 1
+{espada-12-[]} cmp {oro-2-[]} -> 1
+{espada-12-[]} cmp {oro-3-[]} -> 1
+{espada-12-[]} cmp {oro-4-[]} -> 1
+{espada-12-[]} cmp {oro-5-[]} -> 1
+{espada-12-[]} cmp {oro-6-[]} -> 1
+{espada-12-[]} cmp {oro-7-[]} -> 1
+{espada-12-[]} cmp {oro-8-[]} -> 1
+{espada-12-[]} cmp {oro-9-[]} -> 1
+{espada-12-[]} cmp {oro-10-[]} -> 1
+{espada-12-[]} cmp {oro-11-[]} -> 1
+{espada-12-[]} cmp {oro-12-[]} -> 1
+{basto-1-[]} cmp {espada-1-[]} -> 1
+{basto-1-[]} cmp {espada-2-[]} -> 1
+{basto-1-[]} cmp {espada-3-[]} -> 1
+{basto-1-[]} cmp {espada-4-[]} -> 1
+{basto-1-[]} cmp {espada-5-[]} -> 1
+{basto-1-[]} cmp {espada-6-[]} -> 1
+{basto-1-[]} cmp {espada-7-[]} -> 1
+{basto-1-[]} cmp {espada-8-[]} -> 1
+{basto-1-[]} cmp {espada-9-[]} -> 1
+{basto-1-[]} cmp {espada-10-[]} -> 1
+{basto-1-[]} cmp {espada-11-[]} -> 1
+{basto-1-[]} cmp {espada-12-[]} -> 1
+{basto-1-[]} cmp {basto-1-[]} -> 0
+{basto-1-[]} cmp {basto-2-[]} -> 1
+{basto-1-[]} cmp {basto-3-[]} -> 1
+{basto-1-[]} cmp {basto-4-[]} -> 1
+{basto-1-[]} cmp {basto-5-[]} -> 1
+{basto-1-[]} cmp {basto-6-[]} -> 1
+{basto-1-[]} cmp {basto-7-[]} -> 1
+{basto-1-[]} cmp {basto-8-[]} -> 1
+{basto-1-[]} cmp {basto-9-[]} -> 1
+{basto-1-[]} cmp {basto-10-[]} -> 1
+{basto-1-[]} cmp {basto-11-[]} -> 1
+{basto-1-[]} cmp {basto-12-[]} -> 1
+{basto-1-[]} cmp {copa-1-[]} -> 1
+{basto-1-[]} cmp {copa-2-[]} -> 1
+{basto-1-[]} cmp {copa-3-[]} -> 1
+{basto-1-[]} cmp {copa-4-[]} -> 1
+{basto-1-[]} cmp {copa-5-[]} -> 1
+{basto-1-[]} cmp {copa-6-[]} -> 1
+{basto-1-[]} cmp {copa-7-[]} -> 1
+{basto-1-[]} cmp {copa-8-[]} -> 1
+{basto-1-[]} cmp {copa-9-[]} -> 1
+{basto-1-[]} cmp {copa-10-[]} -> 1
+{basto-1-[]} cmp {copa-11-[]} -> 1
+{basto-1-[]} cmp {copa-12-[]} -> 1
+{basto-1-[]} cmp {oro-1-[]} -> 1
+{basto-1-[]} cmp {oro-2-[]} -> 1
+{basto-1-[]} cmp {oro-3-[]} -> 1
+{basto-1-[]} cmp {oro-4-[]} -> 1
+{basto-1-[]} cmp {oro-5-[]} -> 1
+{basto-1-[]} cmp {oro-6-[]} -> 1
+{basto-1-[]} cmp {oro-7-[]} -> 1
+{basto-1-[]} cmp {oro-8-[]} -> 1
+{basto-1-[]} cmp {oro-9-[]} -> 1
+{basto-1-[]} cmp {oro-10-[]} -> 1
+{basto-1-[]} cmp {oro-11-[]} -> 1
+{basto-1-[]} cmp {oro-12-[]} -> 1
+{basto-2-[]} cmp {espada-1-[]} -> 1
+{basto-2-[]} cmp {espada-2-[]} -> 1
+{basto-2-[]} cmp {espada-3-[]} -> 1
+{basto-2-[]} cmp {espada-4-[]} -> 1
+{basto-2-[]} cmp {espada-5-[]} -> 1
+{basto-2-[]} cmp {espada-6-[]} -> 1
+{basto-2-[]} cmp {espada-7-[]} -> 1
+{basto-2-[]} cmp {espada-8-[]} -> 1
+{basto-2-[]} cmp {espada-9-[]} -> 1
+{basto-2-[]} cmp {espada-10-[]} -> 1
+{basto-2-[]} cmp {espada-11-[]} -> 1
+{basto-2-[]} cmp {espada-12-[]} -> 1
+{basto-2-[]} cmp {basto-1-[]} -> -1
+{basto-2-[]} cmp {basto-2-[]} -> 0
+{basto-2-[]} cmp {basto-3-[]} -> 1
+{basto-2-[]} cmp {basto-4-[]} -> 1
+{basto-2-[]} cmp {basto-5-[]} -> 1
+{basto-2-[]} cmp {basto-6-[]} -> 1
+{basto-2-[]} cmp {basto-7-[]} -> 1
+{basto-2-[]} cmp {basto-8-[]} -> 1
+{basto-2-[]} cmp {basto-9-[]} -> 1
+{basto-2-[]} cmp {basto-10-[]} -> 1
+{basto-2-[]} cmp {basto-11-[]} -> 1
+{basto-2-[]} cmp {basto-12-[]} -> 1
+{basto-2-[]} cmp {copa-1-[]} -> 1
+{basto-2-[]} cmp {copa-2-[]} -> 1
+{basto-2-[]} cmp {copa-3-[]} -> 1
+{basto-2-[]} cmp {copa-4-[]} -> 1
+{basto-2-[]} cmp {copa-5-[]} -> 1
+{basto-2-[]} cmp {copa-6-[]} -> 1
+{basto-2-[]} cmp {copa-7-[]} -> 1
+{basto-2-[]} cmp {copa-8-[]} -> 1
+{basto-2-[]} cmp {copa-9-[]} -> 1
+{basto-2-[]} cmp {copa-10-[]} -> 1
+{basto-2-[]} cmp {copa-11-[]} -> 1
+{basto-2-[]} cmp {copa-12-[]} -> 1
+{basto-2-[]} cmp {oro-1-[]} -> 1
+{basto-2-[]} cmp {oro-2-[]} -> 1
+{basto-2-[]} cmp {oro-3-[]} -> 1
+{basto-2-[]} cmp {oro-4-[]} -> 1
+{basto-2-[]} cmp {oro-5-[]} -> 1
+{basto-2-[]} cmp {oro-6-[]} -> 1
+{basto-2-[]} cmp {oro-7-[]} -> 1
+{basto-2-[]} cmp {oro-8-[]} -> 1
+{basto-2-[]} cmp {oro-9-[]} -> 1
+{basto-2-[]} cmp {oro-10-[]} -> 1
+{basto-2-[]} cmp {oro-11-[]} -> 1
+{basto-2-[]} cmp {oro-12-[]} -> 1
+{basto-3-[]} cmp {espada-1-[]} -> 1
+{basto-3-[]} cmp {espada-2-[]} -> 1
+{basto-3-[]} cmp {espada-3-[]} -> 1
+{basto-3-[]} cmp {espada-4-[]} -> 1
+{basto-3-[]} cmp {espada-5-[]} -> 1
+{basto-3-[]} cmp {espada-6-[]} -> 1
+{basto-3-[]} cmp {espada-7-[]} -> 1
+{basto-3-[]} cmp {espada-8-[]} -> 1
+{basto-3-[]} cmp {espada-9-[]} -> 1
+{basto-3-[]} cmp {espada-10-[]} -> 1
+{basto-3-[]} cmp {espada-11-[]} -> 1
+{basto-3-[]} cmp {espada-12-[]} -> 1
+{basto-3-[]} cmp {basto-1-[]} -> -1
+{basto-3-[]} cmp {basto-2-[]} -> -1
+{basto-3-[]} cmp {basto-3-[]} -> 0
+{basto-3-[]} cmp {basto-4-[]} -> 1
+{basto-3-[]} cmp {basto-5-[]} -> 1
+{basto-3-[]} cmp {basto-6-[]} -> 1
+{basto-3-[]} cmp {basto-7-[]} -> 1
+{basto-3-[]} cmp {basto-8-[]} -> 1
+{basto-3-[]} cmp {basto-9-[]} -> 1
+{basto-3-[]} cmp {basto-10-[]} -> 1
+{basto-3-[]} cmp {basto-11-[]} -> 1
+{basto-3-[]} cmp {basto-12-[]} -> 1
+{basto-3-[]} cmp {copa-1-[]} -> 1
+{basto-3-[]} cmp {copa-2-[]} -> 1
+{basto-3-[]} cmp {copa-3-[]} -> 1
+{basto-3-[]} cmp {copa-4-[]} -> 1
+{basto-3-[]} cmp {copa-5-[]} -> 1
+{basto-3-[]} cmp {copa-6-[]} -> 1
+{basto-3-[]} cmp {copa-7-[]} -> 1
+{basto-3-[]} cmp {copa-8-[]} -> 1
+{basto-3-[]} cmp {copa-9-[]} -> 1
+{basto-3-[]} cmp {copa-10-[]} -> 1
+{basto-3-[]} cmp {copa-11-[]} -> 1
+{basto-3-[]} cmp {copa-12-[]} -> 1
+{basto-3-[]} cmp {oro-1-[]} -> 1
+{basto-3-[]} cmp {oro-2-[]} -> 1
+{basto-3-[]} cmp {oro-3-[]} -> 1
+{basto-3-[]} cmp {oro-4-[]} -> 1
+{basto-3-[]} cmp {oro-5-[]} -> 1
+{basto-3-[]} cmp {oro-6-[]} -> 1
+{basto-3-[]} cmp {oro-7-[]} -> 1
+{basto-3-[]} cmp {oro-8-[]} -> 1
+{basto-3-[]} cmp {oro-9-[]} -> 1
+{basto-3-[]} cmp {oro-10-[]} -> 1
+{basto-3-[]} cmp {oro-11-[]} -> 1
+{basto-3-[]} cmp {oro-12-[]} -> 1
+{basto-4-[]} cmp {espada-1-[]} -> 1
+{basto-4-[]} cmp {espada-2-[]} -> 1
+{basto-4-[]} cmp {espada-3-[]} -> 1
+{basto-4-[]} cmp {espada-4-[]} -> 1
+{basto-4-[]} cmp {espada-5-[]} -> 1
+{basto-4-[]} cmp {espada-6-[]} -> 1
+{basto-4-[]} cmp {espada-7-[]} -> 1
+{basto-4-[]} cmp {espada-8-[]} -> 1
+{basto-4-[]} cmp {espada-9-[]} -> 1
+{basto-4-[]} cmp {espada-10-[]} -> 1
+{basto-4-[]} cmp {espada-11-[]} -> 1
+{basto-4-[]} cmp {espada-12-[]} -> 1
+{basto-4-[]} cmp {basto-1-[]} -> -1
+{basto-4-[]} cmp {basto-2-[]} -> -1
+{basto-4-[]} cmp {basto-3-[]} -> -1
+{basto-4-[]} cmp {basto-4-[]} -> 0
+{basto-4-[]} cmp {basto-5-[]} -> 1
+{basto-4-[]} cmp {basto-6-[]} -> 1
+{basto-4-[]} cmp {basto-7-[]} -> 1
+{basto-4-[]} cmp {basto-8-[]} -> 1
+{basto-4-[]} cmp {basto-9-[]} -> 1
+{basto-4-[]} cmp {basto-10-[]} -> 1
+{basto-4-[]} cmp {basto-11-[]} -> 1
+{basto-4-[]} cmp {basto-12-[]} -> 1
+{basto-4-[]} cmp {copa-1-[]} -> 1
+{basto-4-[]} cmp {copa-2-[]} -> 1
+{basto-4-[]} cmp {copa-3-[]} -> 1
+{basto-4-[]} cmp {copa-4-[]} -> 1
+{basto-4-[]} cmp {copa-5-[]} -> 1
+{basto-4-[]} cmp {copa-6-[]} -> 1
+{basto-4-[]} cmp {copa-7-[]} -> 1
+{basto-4-[]} cmp {copa-8-[]} -> 1
+{basto-4-[]} cmp {copa-9-[]} -> 1
+{basto-4-[]} cmp {copa-10-[]} -> 1
+{basto-4-[]} cmp {copa-11-[]} -> 1
+{basto-4-[]} cmp {copa-12-[]} -> 1
+{basto-4-[]} cmp {oro-1-[]} -> 1
+{basto-4-[]} cmp {oro-2-[]} -> 1
+{basto-4-[]} cmp {oro-3-[]} -> 1
+{basto-4-[]} cmp {oro-4-[]} -> 1
+{basto-4-[]} cmp {oro-5-[]} -> 1
+{basto-4-[]} cmp {oro-6-[]} -> 1
+{basto-4-[]} cmp {oro-7-[]} -> 1
+{basto-4-[]} cmp {oro-8-[]} -> 1
+{basto-4-[]} cmp {oro-9-[]} -> 1
+{basto-4-[]} cmp {oro-10-[]} -> 1
+{basto-4-[]} cmp {oro-11-[]} -> 1
+{basto-4-[]} cmp {oro-12-[]} -> 1
+{basto-5-[]} cmp {espada-1-[]} -> 1
+{basto-5-[]} cmp {espada-2-[]} -> 1
+{basto-5-[]} cmp {espada-3-[]} -> 1
+{basto-5-[]} cmp {espada-4-[]} -> 1
+{basto-5-[]} cmp {espada-5-[]} -> 1
+{basto-5-[]} cmp {espada-6-[]} -> 1
+{basto-5-[]} cmp {espada-7-[]} -> 1
+{basto-5-[]} cmp {espada-8-[]} -> 1
+{basto-5-[]} cmp {espada-9-[]} -> 1
+{basto-5-[]} cmp {espada-10-[]} -> 1
+{basto-5-[]} cmp {espada-11-[]} -> 1
+{basto-5-[]} cmp {espada-12-[]} -> 1
+{basto-5-[]} cmp {basto-1-[]} -> -1
+{basto-5-[]} cmp {basto-2-[]} -> -1
+{basto-5-[]} cmp {basto-3-[]} -> -1
+{basto-5-[]} cmp {basto-4-[]} -> -1
+{basto-5-[]} cmp {basto-5-[]} -> 0
+{basto-5-[]} cmp {basto-6-[]} -> 1
+{basto-5-[]} cmp {basto-7-[]} -> 1
+{basto-5-[]} cmp {basto-8-[]} -> 1
+{basto-5-[]} cmp {basto-9-[]} -> 1
+{basto-5-[]} cmp {basto-10-[]} -> 1
+{basto-5-[]} cmp {basto-11-[]} -> 1
+{basto-5-[]} cmp {basto-12-[]} -> 1
+{basto-5-[]} cmp {copa-1-[]} -> 1
+{basto-5-[]} cmp {copa-2-[]} -> 1
+{basto-5-[]} cmp {copa-3-[]} -> 1
+{basto-5-[]} cmp {copa-4-[]} -> 1
+{basto-5-[]} cmp {copa-5-[]} -> 1
+{basto-5-[]} cmp {copa-6-[]} -> 1
+{basto-5-[]} cmp {copa-7-[]} -> 1
+{basto-5-[]} cmp {copa-8-[]} -> 1
+{basto-5-[]} cmp {copa-9-[]} -> 1
+{basto-5-[]} cmp {copa-10-[]} -> 1
+{basto-5-[]} cmp {copa-11-[]} -> 1
+{basto-5-[]} cmp {copa-12-[]} -> 1
+{basto-5-[]} cmp {oro-1-[]} -> 1
+{basto-5-[]} cmp {oro-2-[]} -> 1
+{basto-5-[]} cmp {oro-3-[]} -> 1
+{basto-5-[]} cmp {oro-4-[]} -> 1
+{basto-5-[]} cmp {oro-5-[]} -> 1
+{basto-5-[]} cmp {oro-6-[]} -> 1
+{basto-5-[]} cmp {oro-7-[]} -> 1
+{basto-5-[]} cmp {oro-8-[]} -> 1
+{basto-5-[]} cmp {oro-9-[]} -> 1
+{basto-5-[]} cmp {oro-10-[]} -> 1
+{basto-5-[]} cmp {oro-11-[]} -> 1
+{basto-5-[]} cmp {oro-12-[]} -> 1
+{basto-6-[]} cmp {espada-1-[]} -> 1
+{basto-6-[]} cmp {espada-2-[]} -> 1
+{basto-6-[]} cmp {espada-3-[]} -> 1
+{basto-6-[]} cmp {espada-4-[]} -> 1
+{basto-6-[]} cmp {espada-5-[]} -> 1
+{basto-6-[]} cmp {espada-6-[]} -> 1
+{basto-6-[]} cmp {espada-7-[]} -> 1
+{basto-6-[]} cmp {espada-8-[]} -> 1
+{basto-6-[]} cmp {espada-9-[]} -> 1
+{basto-6-[]} cmp {espada-10-[]} -> 1
+{basto-6-[]} cmp {espada-11-[]} -> 1
+{basto-6-[]} cmp {espada-12-[]} -> 1
+{basto-6-[]} cmp {basto-1-[]} -> -1
+{basto-6-[]} cmp {basto-2-[]} -> -1
+{basto-6-[]} cmp {basto-3-[]} -> -1
+{basto-6-[]} cmp {basto-4-[]} -> -1
+{basto-6-[]} cmp {basto-5-[]} -> -1
+{basto-6-[]} cmp {basto-6-[]} -> 0
+{basto-6-[]} cmp {basto-7-[]} -> 1
+{basto-6-[]} cmp {basto-8-[]} -> 1
+{basto-6-[]} cmp {basto-9-[]} -> 1
+{basto-6-[]} cmp {basto-10-[]} -> 1
+{basto-6-[]} cmp {basto-11-[]} -> 1
+{basto-6-[]} cmp {basto-12-[]} -> 1
+{basto-6-[]} cmp {copa-1-[]} -> 1
+{basto-6-[]} cmp {copa-2-[]} -> 1
+{basto-6-[]} cmp {copa-3-[]} -> 1
+{basto-6-[]} cmp {copa-4-[]} -> 1
+{basto-6-[]} cmp {copa-5-[]} -> 1
+{basto-6-[]} cmp {copa-6-[]} -> 1
+{basto-6-[]} cmp {copa-7-[]} -> 1
+{basto-6-[]} cmp {copa-8-[]} -> 1
+{basto-6-[]} cmp {copa-9-[]} -> 1
+{basto-6-[]} cmp {copa-10-[]} -> 1
+{basto-6-[]} cmp {copa-11-[]} -> 1
+{basto-6-[]} cmp {copa-12-[]} -> 1
+{basto-6-[]} cmp {oro-1-[]} -> 1
+{basto-6-[]} cmp {oro-2-[]} -> 1
+{basto-6-[]} cmp {oro-3-[]} -> 1
+{basto-6-[]} cmp {oro-4-[]} -> 1
+{basto-6-[]} cmp {oro-5-[]} -> 1
+{basto-6-[]} cmp {oro-6-[]} -> 1
+{basto-6-[]} cmp {oro-7-[]} -> 1
+{basto-6-[]} cmp {oro-8-[]} -> 1
+{basto-6-[]} cmp {oro-9-[]} -> 1
+{basto-6-[]} cmp {oro-10-[]} -> 1
+{basto-6-[]} cmp {oro-11-[]} -> 1
+{basto-6-[]} cmp {oro-12-[]} -> 1
+{basto-7-[]} cmp {espada-1-[]} -> 1
+{basto-7-[]} cmp {espada-2-[]} -> 1
+{basto-7-[]} cmp {espada-3-[]} -> 1
+{basto-7-[]} cmp {espada-4-[]} -> 1
+{basto-7-[]} cmp {espada-5-[]} -> 1
+{basto-7-[]} cmp {espada-6-[]} -> 1
+{basto-7-[]} cmp {espada-7-[]} -> 1
+{basto-7-[]} cmp {espada-8-[]} -> 1
+{basto-7-[]} cmp {espada-9-[]} -> 1
+{basto-7-[]} cmp {espada-10-[]} -> 1
+{basto-7-[]} cmp {espada-11-[]} -> 1
+{basto-7-[]} cmp {espada-12-[]} -> 1
+{basto-7-[]} cmp {basto-1-[]} -> -1
+{basto-7-[]} cmp {basto-2-[]} -> -1
+{basto-7-[]} cmp {basto-3-[]} -> -1
+{basto-7-[]} cmp {basto-4-[]} -> -1
+{basto-7-[]} cmp {basto-5-[]} -> -1
+{basto-7-[]} cmp {basto-6-[]} -> -1
+{basto-7-[]} cmp {basto-7-[]} -> 0
+{basto-7-[]} cmp {basto-8-[]} -> 1
+{basto-7-[]} cmp {basto-9-[]} -> 1
+{basto-7-[]} cmp {basto-10-[]} -> 1
+{basto-7-[]} cmp {basto-11-[]} -> 1
+{basto-7-[]} cmp {basto-12-[]} -> 1
+{basto-7-[]} cmp {copa-1-[]} -> 1
+{basto-7-[]} cmp {copa-2-[]} -> 1
+{basto-7-[]} cmp {copa-3-[]} -> 1
+{basto-7-[]} cmp {copa-4-[]} -> 1
+{basto-7-[]} cmp {copa-5-[]} -> 1
+{basto-7-[]} cmp {copa-6-[]} -> 1
+{basto-7-[]} cmp {copa-7-[]} -> 1
+{basto-7-[]} cmp {copa-8-[]} -> 1
+{basto-7-[]} cmp {copa-9-[]} -> 1
+{basto-7-[]} cmp {copa-10-[]} -> 1
+{basto-7-[]} cmp {copa-11-[]} -> 1
+{basto-7-[]} cmp {copa-12-[]} -> 1
+{basto-7-[]} cmp {oro-1-[]} -> 1
+{basto-7-[]} cmp {oro-2-[]} -> 1
+{basto-7-[]} cmp {oro-3-[]} -> 1
+{basto-7-[]} cmp {oro-4-[]} -> 1
+{basto-7-[]} cmp {oro-5-[]} -> 1
+{basto-7-[]} cmp {oro-6-[]} -> 1
+{basto-7-[]} cmp {oro-7-[]} -> 1
+{basto-7-[]} cmp {oro-8-[]} -> 1
+{basto-7-[]} cmp {oro-9-[]} -> 1
+{basto-7-[]} cmp {oro-10-[]} -> 1
+{basto-7-[]} cmp {oro-11-[]} -> 1
+{basto-7-[]} cmp {oro-12-[]} -> 1
+{basto-8-[]} cmp {espada-1-[]} -> 1
+{basto-8-[]} cmp {espada-2-[]} -> 1
+{basto-8-[]} cmp {espada-3-[]} -> 1
+{basto-8-[]} cmp {espada-4-[]} -> 1
+{basto-8-[]} cmp {espada-5-[]} -> 1
+{basto-8-[]} cmp {espada-6-[]} -> 1
+{basto-8-[]} cmp {espada-7-[]} -> 1
+{basto-8-[]} cmp {espada-8-[]} -> 1
+{basto-8-[]} cmp {espada-9-[]} -> 1
+{basto-8-[]} cmp {espada-10-[]} -> 1
+{basto-8-[]} cmp {espada-11-[]} -> 1
+{basto-8-[]} cmp {espada-12-[]} -> 1
+{basto-8-[]} cmp {basto-1-[]} -> -1
+{basto-8-[]} cmp {basto-2-[]} -> -1
+{basto-8-[]} cmp {basto-3-[]} -> -1
+{basto-8-[]} cmp {basto-4-[]} -> -1
+{basto-8-[]} cmp {basto-5-[]} -> -1
+{basto-8-[]} cmp {basto-6-[]} -> -1
+{basto-8-[]} cmp {basto-7-[]} -> -1
+{basto-8-[]} cmp {basto-8-[]} -> 0
+{basto-8-[]} cmp {basto-9-[]} -> 1
+{basto-8-[]} cmp {basto-10-[]} -> 1
+{basto-8-[]} cmp {basto-11-[]} -> 1
+{basto-8-[]} cmp {basto-12-[]} -> 1
+{basto-8-[]} cmp {copa-1-[]} -> 1
+{basto-8-[]} cmp {copa-2-[]} -> 1
+{basto-8-[]} cmp {copa-3-[]} -> 1
+{basto-8-[]} cmp {copa-4-[]} -> 1
+{basto-8-[]} cmp {copa-5-[]} -> 1
+{basto-8-[]} cmp {copa-6-[]} -> 1
+{basto-8-[]} cmp {copa-7-[]} -> 1
+{basto-8-[]} cmp {copa-8-[]} -> 1
+{basto-8-[]} cmp {copa-9-[]} -> 1
+{basto-8-[]} cmp {copa-10-[]} -> 1
+{basto-8-[]} cmp {copa-11-[]} -> 1
+{basto-8-[]} cmp {copa-12-[]} -> 1
+{basto-8-[]} cmp {oro-1-[]} -> 1
+{basto-8-[]} cmp {oro-2-[]} -> 1
+{basto-8-[]} cmp {oro-3-[]} -> 1
+{basto-8-[]} cmp {oro-4-[]} -> 1
+{basto-8-[]} cmp {oro-5-[]} -> 1
+{basto-8-[]} cmp {oro-6-[]} -> 1
+{basto-8-[]} cmp {oro-7-[]} -> 1
+{basto-8-[]} cmp {oro-8-[]} -> 1
+{basto-8-[]} cmp {oro-9-[]} -> 1
+{basto-8-[]} cmp {oro-10-[]} -> 1
+{basto-8-[]} cmp {oro-11-[]} -> 1
+{basto-8-[]} cmp {oro-12-[]} -> 1
+{basto-9-[]} cmp {espada-1-[]} -> 1
+{basto-9-[]} cmp {espada-2-[]} -> 1
+{basto-9-[]} cmp {espada-3-[]} -> 1
+{basto-9-[]} cmp {espada-4-[]} -> 1
+{basto-9-[]} cmp {espada-5-[]} -> 1
+{basto-9-[]} cmp {espada-6-[]} -> 1
+{basto-9-[]} cmp {espada-7-[]} -> 1
+{basto-9-[]} cmp {espada-8-[]} -> 1
+{basto-9-[]} cmp {espada-9-[]} -> 1
+{basto-9-[]} cmp {espada-10-[]} -> 1
+{basto-9-[]} cmp {espada-11-[]} -> 1
+{basto-9-[]} cmp {espada-12-[]} -> 1
+{basto-9-[]} cmp {basto-1-[]} -> -1
+{basto-9-[]} cmp {basto-2-[]} -> -1
+{basto-9-[]} cmp {basto-3-[]} -> -1
+{basto-9-[]} cmp {basto-4-[]} -> -1
+{basto-9-[]} cmp {basto-5-[]} -> -1
+{basto-9-[]} cmp {basto-6-[]} -> -1
+{basto-9-[]} cmp {basto-7-[]} -> -1
+{basto-9-[]} cmp {basto-8-[]} -> -1
+{basto-9-[]} cmp {basto-9-[]} -> 0
+{basto-9-[]} cmp {basto-10-[]} -> 1
+{basto-9-[]} cmp {basto-11-[]} -> 1
+{basto-9-[]} cmp {basto-12-[]} -> 1
+{basto-9-[]} cmp {copa-1-[]} -> 1
+{basto-9-[]} cmp {copa-2-[]} -> 1
+{basto-9-[]} cmp {copa-3-[]} -> 1
+{basto-9-[]} cmp {copa-4-[]} -> 1
+{basto-9-[]} cmp {copa-5-[]} -> 1
+{basto-9-[]} cmp {copa-6-[]} -> 1
+{basto-9-[]} cmp {copa-7-[]} -> 1
+{basto-9-[]} cmp {copa-8-[]} -> 1
+{basto-9-[]} cmp {copa-9-[]} -> 1
+{basto-9-[]} cmp {copa-10-[]} -> 1
+{basto-9-[]} cmp {copa-11-[]} -> 1
+{basto-9-[]} cmp {copa-12-[]} -> 1
+{basto-9-[]} cmp {oro-1-[]} -> 1
+{basto-9-[]} cmp {oro-2-[]} -> 1
+{basto-9-[]} cmp {oro-3-[]} -> 1
+{basto-9-[]} cmp {oro-4-[]} -> 1
+{basto-9-[]} cmp {oro-5-[]} -> 1
+{basto-9-[]} cmp {oro-6-[]} -> 1
+{basto-9-[]} cmp {oro-7-[]} -> 1
+{basto-9-[]} cmp {oro-8-[]} -> 1
+{basto-9-[]} cmp {oro-9-[]} -> 1
+{basto-9-[]} cmp {oro-10-[]} -> 1
+{basto-9-[]} cmp {oro-11-[]} -> 1
+{basto-9-[]} cmp {oro-12-[]} -> 1
+{basto-10-[]} cmp {espada-1-[]} -> 1
+{basto-10-[]} cmp {espada-2-[]} -> 1
+{basto-10-[]} cmp {espada-3-[]} -> 1
+{basto-10-[]} cmp {espada-4-[]} -> 1
+{basto-10-[]} cmp {espada-5-[]} -> 1
+{basto-10-[]} cmp {espada-6-[]} -> 1
+{basto-10-[]} cmp {espada-7-[]} -> 1
+{basto-10-[]} cmp {espada-8-[]} -> 1
+{basto-10-[]} cmp {espada-9-[]} -> 1
+{basto-10-[]} cmp {espada-10-[]} -> 1
+{basto-10-[]} cmp {espada-11-[]} -> 1
+{basto-10-[]} cmp {espada-12-[]} -> 1
+{basto-10-[]} cmp {basto-1-[]} -> -1
+{basto-10-[]} cmp {basto-2-[]} -> -1
+{basto-10-[]} cmp {basto-3-[]} -> -1
+{basto-10-[]} cmp {basto-4-[]} -> -1
+{basto-10-[]} cmp {basto-5-[]} -> -1
+{basto-10-[]} cmp {basto-6-[]} -> -1
+{basto-10-[]} cmp {basto-7-[]} -> -1
+{basto-10-[]} cmp {basto-8-[]} -> -1
+{basto-10-[]} cmp {basto-9-[]} -> -1
+{basto-10-[]} cmp {basto-10-[]} -> 0
+{basto-10-[]} cmp {basto-11-[]} -> 1
+{basto-10-[]} cmp {basto-12-[]} -> 1
+{basto-10-[]} cmp {copa-1-[]} -> 1
+{basto-10-[]} cmp {copa-2-[]} -> 1
+{basto-10-[]} cmp {copa-3-[]} -> 1
+{basto-10-[]} cmp {copa-4-[]} -> 1
+{basto-10-[]} cmp {copa-5-[]} -> 1
+{basto-10-[]} cmp {copa-6-[]} -> 1
+{basto-10-[]} cmp {copa-7-[]} -> 1
+{basto-10-[]} cmp {copa-8-[]} -> 1
+{basto-10-[]} cmp {copa-9-[]} -> 1
+{basto-10-[]} cmp {copa-10-[]} -> 1
+{basto-10-[]} cmp {copa-11-[]} -> 1
+{basto-10-[]} cmp {copa-12-[]} -> 1
+{basto-10-[]} cmp {oro-1-[]} -> 1
+{basto-10-[]} cmp {oro-2-[]} -> 1
+{basto-10-[]} cmp {oro-3-[]} -> 1
+{basto-10-[]} cmp {oro-4-[]} -> 1
+{basto-10-[]} cmp {oro-5-[]} -> 1
+{basto-10-[]} cmp {oro-6-[]} -> 1
+{basto-10-[]} cmp {oro-7-[]} -> 1
+{basto-10-[]} cmp {oro-8-[]} -> 1
+{basto-10-[]} cmp {oro-9-[]} -> 1
+{basto-10-[]} cmp {oro-10-[]} -> 1
+{basto-10-[]} cmp {oro-11-[]} -> 1
+{basto-10-[]} cmp {oro-12-[]} -> 1
+{basto-11-[]} cmp {espada-1-[]} -> 1
+{basto-11-[]} cmp {espada-2-[]} -> 1
+{basto-11-[]} cmp {espada-3-[]} -> 1
+{basto-11-[]} cmp {espada-4-[]} -> 1
+{basto-11-[]} cmp {espada-5-[]} -> 1
+{basto-11-[]} cmp {espada-6-[]} -> 1
+{basto-11-[]} cmp {espada-7-[]} -> 1
+{basto-11-[]} cmp {espada-8-[]} -> 1
+{basto-11-[]} cmp {espada-9-[]} -> 1
+{basto-11-[]} cmp {espada-10-[]} -> 1
+{basto-11-[]} cmp {espada-11-[]} -> 1
+{basto-11-[]} cmp {espada-12-[]} -> 1
+{basto-11-[]} cmp {basto-1-[]} -> -1
+{basto-11-[]} cmp {basto-2-[]} -> -1
+{basto-11-[]} cmp {basto-3-[]} -> -1
+{basto-11-[]} cmp {basto-4-[]} -> -1
+{basto-11-[]} cmp {basto-5-[]} -> -1
+{basto-11-[]} cmp {basto-6-[]} -> -1
+{basto-11-[]} cmp {basto-7-[]} -> -1
+{basto-11-[]} cmp {basto-8-[]} -> -1
+{basto-11-[]} cmp {basto-9-[]} -> -1
+{basto-11-[]} cmp {basto-10-[]} -> -1
+{basto-11-[]} cmp {basto-11-[]} -> 0
+{basto-11-[]} cmp {basto-12-[]} -> 1
+{basto-11-[]} cmp {copa-1-[]} -> 1
+{basto-11-[]} cmp {copa-2-[]} -> 1
+{basto-11-[]} cmp {copa-3-[]} -> 1
+{basto-11-[]} cmp {copa-4-[]} -> 1
+{basto-11-[]} cmp {copa-5-[]} -> 1
+{basto-11-[]} cmp {copa-6-[]} -> 1
+{basto-11-[]} cmp {copa-7-[]} -> 1
+{basto-11-[]} cmp {copa-8-[]} -> 1
+{basto-11-[]} cmp {copa-9-[]} -> 1
+{basto-11-[]} cmp {copa-10-[]} -> 1
+{basto-11-[]} cmp {copa-11-[]} -> 1
+{basto-11-[]} cmp {copa-12-[]} -> 1
+{basto-11-[]} cmp {oro-1-[]} -> 1
+{basto-11-[]} cmp {oro-2-[]} -> 1
+{basto-11-[]} cmp {oro-3-[]} -> 1
+{basto-11-[]} cmp {oro-4-[]} -> 1
+{basto-11-[]} cmp {oro-5-[]} -> 1
+{basto-11-[]} cmp {oro-6-[]} -> 1
+{basto-11-[]} cmp {oro-7-[]} -> 1
+{basto-11-[]} cmp {oro-8-[]} -> 1
+{basto-11-[]} cmp {oro-9-[]} -> 1
+{basto-11-[]} cmp {oro-10-[]} -> 1
+{basto-11-[]} cmp {oro-11-[]} -> 1
+{basto-11-[]} cmp {oro-12-[]} -> 1
+{basto-12-[]} cmp {espada-1-[]} -> 1
+{basto-12-[]} cmp {espada-2-[]} -> 1
+{basto-12-[]} cmp {espada-3-[]} -> 1
+{basto-12-[]} cmp {espada-4-[]} -> 1
+{basto-12-[]} cmp {espada-5-[]} -> 1
+{basto-12-[]} cmp {espada-6-[]} -> 1
+{basto-12-[]} cmp {espada-7-[]} -> 1
+{basto-12-[]} cmp {espada-8-[]} -> 1
+{basto-12-[]} cmp {espada-9-[]} -> 1
+{basto-12-[]} cmp {espada-10-[]} -> 1
+{basto-12-[]} cmp {espada-11-[]} -> 1
+{basto-12-[]} cmp {espada-12-[]} -> 1
+{basto-12-[]} cmp {basto-1-[]} -> -1
+{basto-12-[]} cmp {basto-2-[]} -> -1
+{basto-12-[]} cmp {basto-3-[]} -> -1
+{basto-12-[]} cmp {basto-4-[]} -> -1
+{basto-12-[]} cmp {basto-5-[]} -> -1
+{basto-12-[]} cmp {basto-6-[]} -> -1
+{basto-12-[]} cmp {basto-7-[]} -> -1
+{basto-12-[]} cmp {basto-8-[]} -> -1
+{basto-12-[]} cmp {basto-9-[]} -> -1
+{basto-12-[]} cmp {basto-10-[]} -> -1
+{basto-12-[]} cmp {basto-11-[]} -> -1
+{basto-12-[]} cmp {basto-12-[]} -> 0
+{basto-12-[]} cmp {copa-1-[]} -> 1
+{basto-12-[]} cmp {copa-2-[]} -> 1
+{basto-12-[]} cmp {copa-3-[]} -> 1
+{basto-12-[]} cmp {copa-4-[]} -> 1
+{basto-12-[]} cmp {copa-5-[]} -> 1
+{basto-12-[]} cmp {copa-6-[]} -> 1
+{basto-12-[]} cmp {copa-7-[]} -> 1
+{basto-12-[]} cmp {copa-8-[]} -> 1
+{basto-12-[]} cmp {copa-9-[]} -> 1
+{basto-12-[]} cmp {copa-10-[]} -> 1
+{basto-12-[]} cmp {copa-11-[]} -> 1
+{basto-12-[]} cmp {copa-12-[]} -> 1
+{basto-12-[]} cmp {oro-1-[]} -> 1
+{basto-12-[]} cmp {oro-2-[]} -> 1
+{basto-12-[]} cmp {oro-3-[]} -> 1
+{basto-12-[]} cmp {oro-4-[]} -> 1
+{basto-12-[]} cmp {oro-5-[]} -> 1
+{basto-12-[]} cmp {oro-6-[]} -> 1
+{basto-12-[]} cmp {oro-7-[]} -> 1
+{basto-12-[]} cmp {oro-8-[]} -> 1
+{basto-12-[]} cmp {oro-9-[]} -> 1
+{basto-12-[]} cmp {oro-10-[]} -> 1
+{basto-12-[]} cmp {oro-11-[]} -> 1
+{basto-12-[]} cmp {oro-12-[]} -> 1
+{copa-1-[]} cmp {espada-1-[]} -> 1
+{copa-1-[]} cmp {espada-2-[]} -> 1
+{copa-1-[]} cmp {espada-3-[]} -> 1
+{copa-1-[]} cmp {espada-4-[]} -> 1
+{copa-1-[]} cmp {espada-5-[]} -> 1
+{copa-1-[]} cmp {espada-6-[]} -> 1
+{copa-1-[]} cmp {espada-7-[]} -> 1
+{copa-1-[]} cmp {espada-8-[]} -> 1
+{copa-1-[]} cmp {espada-9-[]} -> 1
+{copa-1-[]} cmp {espada-10-[]} -> 1
+{copa-1-[]} cmp {espada-11-[]} -> 1
+{copa-1-[]} cmp {espada-12-[]} -> 1
+{copa-1-[]} cmp {basto-1-[]} -> -1
+{copa-1-[]} cmp {basto-2-[]} -> -1
+{copa-1-[]} cmp {basto-3-[]} -> -1
+{copa-1-[]} cmp {basto-4-[]} -> -1
+{copa-1-[]} cmp {basto-5-[]} -> -1
+{copa-1-[]} cmp {basto-6-[]} -> -1
+{copa-1-[]} cmp {basto-7-[]} -> -1
+{copa-1-[]} cmp {basto-8-[]} -> -1
+{copa-1-[]} cmp {basto-9-[]} -> -1
+{copa-1-[]} cmp {basto-10-[]} -> -1
+{copa-1-[]} cmp {basto-11-[]} -> -1
+{copa-1-[]} cmp {basto-12-[]} -> -1
+{copa-1-[]} cmp {copa-1-[]} -> 0
+{copa-1-[]} cmp {copa-2-[]} -> 1
+{copa-1-[]} cmp {copa-3-[]} -> 1
+{copa-1-[]} cmp {copa-4-[]} -> 1
+{copa-1-[]} cmp {copa-5-[]} -> 1
+{copa-1-[]} cmp {copa-6-[]} -> 1
+{copa-1-[]} cmp {copa-7-[]} -> 1
+{copa-1-[]} cmp {copa-8-[]} -> 1
+{copa-1-[]} cmp {copa-9-[]} -> 1
+{copa-1-[]} cmp {copa-10-[]} -> 1
+{copa-1-[]} cmp {copa-11-[]} -> 1
+{copa-1-[]} cmp {copa-12-[]} -> 1
+{copa-1-[]} cmp {oro-1-[]} -> 1
+{copa-1-[]} cmp {oro-2-[]} -> 1
+{copa-1-[]} cmp {oro-3-[]} -> 1
+{copa-1-[]} cmp {oro-4-[]} -> 1
+{copa-1-[]} cmp {oro-5-[]} -> 1
+{copa-1-[]} cmp {oro-6-[]} -> 1
+{copa-1-[]} cmp {oro-7-[]} -> 1
+{copa-1-[]} cmp {oro-8-[]} -> 1
+{copa-1-[]} cmp {oro-9-[]} -> 1
+{copa-1-[]} cmp {oro-10-[]} -> 1
+{copa-1-[]} cmp {oro-11-[]} -> 1
+{copa-1-[]} cmp {oro-12-[]} -> 1
+{copa-2-[]} cmp {espada-1-[]} -> 1
+{copa-2-[]} cmp {espada-2-[]} -> 1
+{copa-2-[]} cmp {espada-3-[]} -> 1
+{copa-2-[]} cmp {espada-4-[]} -> 1
+{copa-2-[]} cmp {espada-5-[]} -> 1
+{copa-2-[]} cmp {espada-6-[]} -> 1
+{copa-2-[]} cmp {espada-7-[]} -> 1
+{copa-2-[]} cmp {espada-8-[]} -> 1
+{copa-2-[]} cmp {espada-9-[]} -> 1
+{copa-2-[]} cmp {espada-10-[]} -> 1
+{copa-2-[]} cmp {espada-11-[]} -> 1
+{copa-2-[]} cmp {espada-12-[]} -> 1
+{copa-2-[]} cmp {basto-1-[]} -> -1
+{copa-2-[]} cmp {basto-2-[]} -> -1
+{copa-2-[]} cmp {basto-3-[]} -> -1
+{copa-2-[]} cmp {basto-4-[]} -> -1
+{copa-2-[]} cmp {basto-5-[]} -> -1
+{copa-2-[]} cmp {basto-6-[]} -> -1
+{copa-2-[]} cmp {basto-7-[]} -> -1
+{copa-2-[]} cmp {basto-8-[]} -> -1
+{copa-2-[]} cmp {basto-9-[]} -> -1
+{copa-2-[]} cmp {basto-10-[]} -> -1
+{copa-2-[]} cmp {basto-11-[]} -> -1
+{copa-2-[]} cmp {basto-12-[]} -> -1
+{copa-2-[]} cmp {copa-1-[]} -> -1
+{copa-2-[]} cmp {copa-2-[]} -> 0
+{copa-2-[]} cmp {copa-3-[]} -> 1
+{copa-2-[]} cmp {copa-4-[]} -> 1
+{copa-2-[]} cmp {copa-5-[]} -> 1
+{copa-2-[]} cmp {copa-6-[]} -> 1
+{copa-2-[]} cmp {copa-7-[]} -> 1
+{copa-2-[]} cmp {copa-8-[]} -> 1
+{copa-2-[]} cmp {copa-9-[]} -> 1
+{copa-2-[]} cmp {copa-10-[]} -> 1
+{copa-2-[]} cmp {copa-11-[]} -> 1
+{copa-2-[]} cmp {copa-12-[]} -> 1
+{copa-2-[]} cmp {oro-1-[]} -> 1
+{copa-2-[]} cmp {oro-2-[]} -> 1
+{copa-2-[]} cmp {oro-3-[]} -> 1
+{copa-2-[]} cmp {oro-4-[]} -> 1
+{copa-2-[]} cmp {oro-5-[]} -> 1
+{copa-2-[]} cmp {oro-6-[]} -> 1
+{copa-2-[]} cmp {oro-7-[]} -> 1
+{copa-2-[]} cmp {oro-8-[]} -> 1
+{copa-2-[]} cmp {oro-9-[]} -> 1
+{copa-2-[]} cmp {oro-10-[]} -> 1
+{copa-2-[]} cmp {oro-11-[]} -> 1
+{copa-2-[]} cmp {oro-12-[]} -> 1
+{copa-3-[]} cmp {espada-1-[]} -> 1
+{copa-3-[]} cmp {espada-2-[]} -> 1
+{copa-3-[]} cmp {espada-3-[]} -> 1
+{copa-3-[]} cmp {espada-4-[]} -> 1
+{copa-3-[]} cmp {espada-5-[]} -> 1
+{copa-3-[]} cmp {espada-6-[]} -> 1
+{copa-3-[]} cmp {espada-7-[]} -> 1
+{copa-3-[]} cmp {espada-8-[]} -> 1
+{copa-3-[]} cmp {espada-9-[]} -> 1
+{copa-3-[]} cmp {espada-10-[]} -> 1
+{copa-3-[]} cmp {espada-11-[]} -> 1
+{copa-3-[]} cmp {espada-12-[]} -> 1
+{copa-3-[]} cmp {basto-1-[]} -> -1
+{copa-3-[]} cmp {basto-2-[]} -> -1
+{copa-3-[]} cmp {basto-3-[]} -> -1
+{copa-3-[]} cmp {basto-4-[]} -> -1
+{copa-3-[]} cmp {basto-5-[]} -> -1
+{copa-3-[]} cmp {basto-6-[]} -> -1
+{copa-3-[]} cmp {basto-7-[]} -> -1
+{copa-3-[]} cmp {basto-8-[]} -> -1
+{copa-3-[]} cmp {basto-9-[]} -> -1
+{copa-3-[]} cmp {basto-10-[]} -> -1
+{copa-3-[]} cmp {basto-11-[]} -> -1
+{copa-3-[]} cmp {basto-12-[]} -> -1
+{copa-3-[]} cmp {copa-1-[]} -> -1
+{copa-3-[]} cmp {copa-2-[]} -> -1
+{copa-3-[]} cmp {copa-3-[]} -> 0
+{copa-3-[]} cmp {copa-4-[]} -> 1
+{copa-3-[]} cmp {copa-5-[]} -> 1
+{copa-3-[]} cmp {copa-6-[]} -> 1
+{copa-3-[]} cmp {copa-7-[]} -> 1
+{copa-3-[]} cmp {copa-8-[]} -> 1
+{copa-3-[]} cmp {copa-9-[]} -> 1
+{copa-3-[]} cmp {copa-10-[]} -> 1
+{copa-3-[]} cmp {copa-11-[]} -> 1
+{copa-3-[]} cmp {copa-12-[]} -> 1
+{copa-3-[]} cmp {oro-1-[]} -> 1
+{copa-3-[]} cmp {oro-2-[]} -> 1
+{copa-3-[]} cmp {oro-3-[]} -> 1
+{copa-3-[]} cmp {oro-4-[]} -> 1
+{copa-3-[]} cmp {oro-5-[]} -> 1
+{copa-3-[]} cmp {oro-6-[]} -> 1
+{copa-3-[]} cmp {oro-7-[]} -> 1
+{copa-3-[]} cmp {oro-8-[]} -> 1
+{copa-3-[]} cmp {oro-9-[]} -> 1
+{copa-3-[]} cmp {oro-10-[]} -> 1
+{copa-3-[]} cmp {oro-11-[]} -> 1
+{copa-3-[]} cmp {oro-12-[]} -> 1
+{copa-4-[]} cmp {espada-1-[]} -> 1
+{copa-4-[]} cmp {espada-2-[]} -> 1
+{copa-4-[]} cmp {espada-3-[]} -> 1
+{copa-4-[]} cmp {espada-4-[]} -> 1
+{copa-4-[]} cmp {espada-5-[]} -> 1
+{copa-4-[]} cmp {espada-6-[]} -> 1
+{copa-4-[]} cmp {espada-7-[]} -> 1
+{copa-4-[]} cmp {espada-8-[]} -> 1
+{copa-4-[]} cmp {espada-9-[]} -> 1
+{copa-4-[]} cmp {espada-10-[]} -> 1
+{copa-4-[]} cmp {espada-11-[]} -> 1
+{copa-4-[]} cmp {espada-12-[]} -> 1
+{copa-4-[]} cmp {basto-1-[]} -> -1
+{copa-4-[]} cmp {basto-2-[]} -> -1
+{copa-4-[]} cmp {basto-3-[]} -> -1
+{copa-4-[]} cmp {basto-4-[]} -> -1
+{copa-4-[]} cmp {basto-5-[]} -> -1
+{copa-4-[]} cmp {basto-6-[]} -> -1
+{copa-4-[]} cmp {basto-7-[]} -> -1
+{copa-4-[]} cmp {basto-8-[]} -> -1
+{copa-4-[]} cmp {basto-9-[]} -> -1
+{copa-4-[]} cmp {basto-10-[]} -> -1
+{copa-4-[]} cmp {basto-11-[]} -> -1
+{copa-4-[]} cmp {basto-12-[]} -> -1
+{copa-4-[]} cmp {copa-1-[]} -> -1
+{copa-4-[]} cmp {copa-2-[]} -> -1
+{copa-4-[]} cmp {copa-3-[]} -> -1
+{copa-4-[]} cmp {copa-4-[]} -> 0
+{copa-4-[]} cmp {copa-5-[]} -> 1
+{copa-4-[]} cmp {copa-6-[]} -> 1
+{copa-4-[]} cmp {copa-7-[]} -> 1
+{copa-4-[]} cmp {copa-8-[]} -> 1
+{copa-4-[]} cmp {copa-9-[]} -> 1
+{copa-4-[]} cmp {copa-10-[]} -> 1
+{copa-4-[]} cmp {copa-11-[]} -> 1
+{copa-4-[]} cmp {copa-12-[]} -> 1
+{copa-4-[]} cmp {oro-1-[]} -> 1
+{copa-4-[]} cmp {oro-2-[]} -> 1
+{copa-4-[]} cmp {oro-3-[]} -> 1
+{copa-4-[]} cmp {oro-4-[]} -> 1
+{copa-4-[]} cmp {oro-5-[]} -> 1
+{copa-4-[]} cmp {oro-6-[]} -> 1
+{copa-4-[]} cmp {oro-7-[]} -> 1
+{copa-4-[]} cmp {oro-8-[]} -> 1
+{copa-4-[]} cmp {oro-9-[]} -> 1
+{copa-4-[]} cmp {oro-10-[]} -> 1
+{copa-4-[]} cmp {oro-11-[]} -> 1
+{copa-4-[]} cmp {oro-12-[]} -> 1
+{copa-5-[]} cmp {espada-1-[]} -> 1
+{copa-5-[]} cmp {espada-2-[]} -> 1
+{copa-5-[]} cmp {espada-3-[]} -> 1
+{copa-5-[]} cmp {espada-4-[]} -> 1
+{copa-5-[]} cmp {espada-5-[]} -> 1
+{copa-5-[]} cmp {espada-6-[]} -> 1
+{copa-5-[]} cmp {espada-7-[]} -> 1
+{copa-5-[]} cmp {espada-8-[]} -> 1
+{copa-5-[]} cmp {espada-9-[]} -> 1
+{copa-5-[]} cmp {espada-10-[]} -> 1
+{copa-5-[]} cmp {espada-11-[]} -> 1
+{copa-5-[]} cmp {espada-12-[]} -> 1
+{copa-5-[]} cmp {basto-1-[]} -> -1
+{copa-5-[]} cmp {basto-2-[]} -> -1
+{copa-5-[]} cmp {basto-3-[]} -> -1
+{copa-5-[]} cmp {basto-4-[]} -> -1
+{copa-5-[]} cmp {basto-5-[]} -> -1
+{copa-5-[]} cmp {basto-6-[]} -> -1
+{copa-5-[]} cmp {basto-7-[]} -> -1
+{copa-5-[]} cmp {basto-8-[]} -> -1
+{copa-5-[]} cmp {basto-9-[]} -> -1
+{copa-5-[]} cmp {basto-10-[]} -> -1
+{copa-5-[]} cmp {basto-11-[]} -> -1
+{copa-5-[]} cmp {basto-12-[]} -> -1
+{copa-5-[]} cmp {copa-1-[]} -> -1
+{copa-5-[]} cmp {copa-2-[]} -> -1
+{copa-5-[]} cmp {copa-3-[]} -> -1
+{copa-5-[]} cmp {copa-4-[]} -> -1
+{copa-5-[]} cmp {copa-5-[]} -> 0
+{copa-5-[]} cmp {copa-6-[]} -> 1
+{copa-5-[]} cmp {copa-7-[]} -> 1
+{copa-5-[]} cmp {copa-8-[]} -> 1
+{copa-5-[]} cmp {copa-9-[]} -> 1
+{copa-5-[]} cmp {copa-10-[]} -> 1
+{copa-5-[]} cmp {copa-11-[]} -> 1
+{copa-5-[]} cmp {copa-12-[]} -> 1
+{copa-5-[]} cmp {oro-1-[]} -> 1
+{copa-5-[]} cmp {oro-2-[]} -> 1
+{copa-5-[]} cmp {oro-3-[]} -> 1
+{copa-5-[]} cmp {oro-4-[]} -> 1
+{copa-5-[]} cmp {oro-5-[]} -> 1
+{copa-5-[]} cmp {oro-6-[]} -> 1
+{copa-5-[]} cmp {oro-7-[]} -> 1
+{copa-5-[]} cmp {oro-8-[]} -> 1
+{copa-5-[]} cmp {oro-9-[]} -> 1
+{copa-5-[]} cmp {oro-10-[]} -> 1
+{copa-5-[]} cmp {oro-11-[]} -> 1
+{copa-5-[]} cmp {oro-12-[]} -> 1
+{copa-6-[]} cmp {espada-1-[]} -> 1
+{copa-6-[]} cmp {espada-2-[]} -> 1
+{copa-6-[]} cmp {espada-3-[]} -> 1
+{copa-6-[]} cmp {espada-4-[]} -> 1
+{copa-6-[]} cmp {espada-5-[]} -> 1
+{copa-6-[]} cmp {espada-6-[]} -> 1
+{copa-6-[]} cmp {espada-7-[]} -> 1
+{copa-6-[]} cmp {espada-8-[]} -> 1
+{copa-6-[]} cmp {espada-9-[]} -> 1
+{copa-6-[]} cmp {espada-10-[]} -> 1
+{copa-6-[]} cmp {espada-11-[]} -> 1
+{copa-6-[]} cmp {espada-12-[]} -> 1
+{copa-6-[]} cmp {basto-1-[]} -> -1
+{copa-6-[]} cmp {basto-2-[]} -> -1
+{copa-6-[]} cmp {basto-3-[]} -> -1
+{copa-6-[]} cmp {basto-4-[]} -> -1
+{copa-6-[]} cmp {basto-5-[]} -> -1
+{copa-6-[]} cmp {basto-6-[]} -> -1
+{copa-6-[]} cmp {basto-7-[]} -> -1
+{copa-6-[]} cmp {basto-8-[]} -> -1
+{copa-6-[]} cmp {basto-9-[]} -> -1
+{copa-6-[]} cmp {basto-10-[]} -> -1
+{copa-6-[]} cmp {basto-11-[]} -> -1
+{copa-6-[]} cmp {basto-12-[]} -> -1
+{copa-6-[]} cmp {copa-1-[]} -> -1
+{copa-6-[]} cmp {copa-2-[]} -> -1
+{copa-6-[]} cmp {copa-3-[]} -> -1
+{copa-6-[]} cmp {copa-4-[]} -> -1
+{copa-6-[]} cmp {copa-5-[]} -> -1
+{copa-6-[]} cmp {copa-6-[]} -> 0
+{copa-6-[]} cmp {copa-7-[]} -> 1
+{copa-6-[]} cmp {copa-8-[]} -> 1
+{copa-6-[]} cmp {copa-9-[]} -> 1
+{copa-6-[]} cmp {copa-10-[]} -> 1
+{copa-6-[]} cmp {copa-11-[]} -> 1
+{copa-6-[]} cmp {copa-12-[]} -> 1
+{copa-6-[]} cmp {oro-1-[]} -> 1
+{copa-6-[]} cmp {oro-2-[]} -> 1
+{copa-6-[]} cmp {oro-3-[]} -> 1
+{copa-6-[]} cmp {oro-4-[]} -> 1
+{copa-6-[]} cmp {oro-5-[]} -> 1
+{copa-6-[]} cmp {oro-6-[]} -> 1
+{copa-6-[]} cmp {oro-7-[]} -> 1
+{copa-6-[]} cmp {oro-8-[]} -> 1
+{copa-6-[]} cmp {oro-9-[]} -> 1
+{copa-6-[]} cmp {oro-10-[]} -> 1
+{copa-6-[]} cmp {oro-11-[]} -> 1
+{copa-6-[]} cmp {oro-12-[]} -> 1
+{copa-7-[]} cmp {espada-1-[]} -> 1
+{copa-7-[]} cmp {espada-2-[]} -> 1
+{copa-7-[]} cmp {espada-3-[]} -> 1
+{copa-7-[]} cmp {espada-4-[]} -> 1
+{copa-7-[]} cmp {espada-5-[]} -> 1
+{copa-7-[]} cmp {espada-6-[]} -> 1
+{copa-7-[]} cmp {espada-7-[]} -> 1
+{copa-7-[]} cmp {espada-8-[]} -> 1
+{copa-7-[]} cmp {espada-9-[]} -> 1
+{copa-7-[]} cmp {espada-10-[]} -> 1
+{copa-7-[]} cmp {espada-11-[]} -> 1
+{copa-7-[]} cmp {espada-12-[]} -> 1
+{copa-7-[]} cmp {basto-1-[]} -> -1
+{copa-7-[]} cmp {basto-2-[]} -> -1
+{copa-7-[]} cmp {basto-3-[]} -> -1
+{copa-7-[]} cmp {basto-4-[]} -> -1
+{copa-7-[]} cmp {basto-5-[]} -> -1
+{copa-7-[]} cmp {basto-6-[]} -> -1
+{copa-7-[]} cmp {basto-7-[]} -> -1
+{copa-7-[]} cmp {basto-8-[]} -> -1
+{copa-7-[]} cmp {basto-9-[]} -> -1
+{copa-7-[]} cmp {basto-10-[]} -> -1
+{copa-7-[]} cmp {basto-11-[]} -> -1
+{copa-7-[]} cmp {basto-12-[]} -> -1
+{copa-7-[]} cmp {copa-1-[]} -> -1
+{copa-7-[]} cmp {copa-2-[]} -> -1
+{copa-7-[]} cmp {copa-3-[]} -> -1
+{copa-7-[]} cmp {copa-4-[]} -> -1
+{copa-7-[]} cmp {copa-5-[]} -> -1
+{copa-7-[]} cmp {copa-6-[]} -> -1
+{copa-7-[]} cmp {copa-7-[]} -> 0
+{copa-7-[]} cmp {copa-8-[]} -> 1
+{copa-7-[]} cmp {copa-9-[]} -> 1
+{copa-7-[]} cmp {copa-10-[]} -> 1
+{copa-7-[]} cmp {copa-11-[]} -> 1
+{copa-7-[]} cmp {copa-12-[]} -> 1
+{copa-7-[]} cmp {oro-1-[]} -> 1
+{copa-7-[]} cmp {oro-2-[]} -> 1
+{copa-7-[]} cmp {oro-3-[]} -> 1
+{copa-7-[]} cmp {oro-4-[]} -> 1
+{copa-7-[]} cmp {oro-5-[]} -> 1
+{copa-7-[]} cmp {oro-6-[]} -> 1
+{copa-7-[]} cmp {oro-7-[]} -> 1
+{copa-7-[]} cmp {oro-8-[]} -> 1
+{copa-7-[]} cmp {oro-9-[]} -> 1
+{copa-7-[]} cmp {oro-10-[]} -> 1
+{copa-7-[]} cmp {oro-11-[]} -> 1
+{copa-7-[]} cmp {oro-12-[]} -> 1
+{copa-8-[]} cmp {espada-1-[]} -> 1
+{copa-8-[]} cmp {espada-2-[]} -> 1
+{copa-8-[]} cmp {espada-3-[]} -> 1
+{copa-8-[]} cmp {espada-4-[]} -> 1
+{copa-8-[]} cmp {espada-5-[]} -> 1
+{copa-8-[]} cmp {espada-6-[]} -> 1
+{copa-8-[]} cmp {espada-7-[]} -> 1
+{copa-8-[]} cmp {espada-8-[]} -> 1
+{copa-8-[]} cmp {espada-9-[]} -> 1
+{copa-8-[]} cmp {espada-10-[]} -> 1
+{copa-8-[]} cmp {espada-11-[]} -> 1
+{copa-8-[]} cmp {espada-12-[]} -> 1
+{copa-8-[]} cmp {basto-1-[]} -> -1
+{copa-8-[]} cmp {basto-2-[]} -> -1
+{copa-8-[]} cmp {basto-3-[]} -> -1
+{copa-8-[]} cmp {basto-4-[]} -> -1
+{copa-8-[]} cmp {basto-5-[]} -> -1
+{copa-8-[]} cmp {basto-6-[]} -> -1
+{copa-8-[]} cmp {basto-7-[]} -> -1
+{copa-8-[]} cmp {basto-8-[]} -> -1
+{copa-8-[]} cmp {basto-9-[]} -> -1
+{copa-8-[]} cmp {basto-10-[]} -> -1
+{copa-8-[]} cmp {basto-11-[]} -> -1
+{copa-8-[]} cmp {basto-12-[]} -> -1
+{copa-8-[]} cmp {copa-1-[]} -> -1
+{copa-8-[]} cmp {copa-2-[]} -> -1
+{copa-8-[]} cmp {copa-3-[]} -> -1
+{copa-8-[]} cmp {copa-4-[]} -> -1
+{copa-8-[]} cmp {copa-5-[]} -> -1
+{copa-8-[]} cmp {copa-6-[]} -> -1
+{copa-8-[]} cmp {copa-7-[]} -> -1
+{copa-8-[]} cmp {copa-8-[]} -> 0
+{copa-8-[]} cmp {copa-9-[]} -> 1
+{copa-8-[]} cmp {copa-10-[]} -> 1
+{copa-8-[]} cmp {copa-11-[]} -> 1
+{copa-8-[]} cmp {copa-12-[]} -> 1
+{copa-8-[]} cmp {oro-1-[]} -> 1
+{copa-8-[]} cmp {oro-2-[]} -> 1
+{copa-8-[]} cmp {oro-3-[]} -> 1
+{copa-8-[]} cmp {oro-4-[]} -> 1
+{copa-8-[]} cmp {oro-5-[]} -> 1
+{copa-8-[]} cmp {oro-6-[]} -> 1
+{copa-8-[]} cmp {oro-7-[]} -> 1
+{copa-8-[]} cmp {oro-8-[]} -> 1
+{copa-8-[]} cmp {oro-9-[]} -> 1
+{copa-8-[]} cmp {oro-10-[]} -> 1
+{copa-8-[]} cmp {oro-11-[]} -> 1
+{copa-8-[]} cmp {oro-12-[]} -> 1
+{copa-9-[]} cmp {espada-1-[]} -> 1
+{copa-9-[]} cmp {espada-2-[]} -> 1
+{copa-9-[]} cmp {espada-3-[]} -> 1
+{copa-9-[]} cmp {espada-4-[]} -> 1
+{copa-9-[]} cmp {espada-5-[]} -> 1
+{copa-9-[]} cmp {espada-6-[]} -> 1
+{copa-9-[]} cmp {espada-7-[]} -> 1
+{copa-9-[]} cmp {espada-8-[]} -> 1
+{copa-9-[]} cmp {espada-9-[]} -> 1
+{copa-9-[]} cmp {espada-10-[]} -> 1
+{copa-9-[]} cmp {espada-11-[]} -> 1
+{copa-9-[]} cmp {espada-12-[]} -> 1
+{copa-9-[]} cmp {basto-1-[]} -> -1
+{copa-9-[]} cmp {basto-2-[]} -> -1
+{copa-9-[]} cmp {basto-3-[]} -> -1
+{copa-9-[]} cmp {basto-4-[]} -> -1
+{copa-9-[]} cmp {basto-5-[]} -> -1
+{copa-9-[]} cmp {basto-6-[]} -> -1
+{copa-9-[]} cmp {basto-7-[]} -> -1
+{copa-9-[]} cmp {basto-8-[]} -> -1
+{copa-9-[]} cmp {basto-9-[]} -> -1
+{copa-9-[]} cmp {basto-10-[]} -> -1
+{copa-9-[]} cmp {basto-11-[]} -> -1
+{copa-9-[]} cmp {basto-12-[]} -> -1
+{copa-9-[]} cmp {copa-1-[]} -> -1
+{copa-9-[]} cmp {copa-2-[]} -> -1
+{copa-9-[]} cmp {copa-3-[]} -> -1
+{copa-9-[]} cmp {copa-4-[]} -> -1
+{copa-9-[]} cmp {copa-5-[]} -> -1
+{copa-9-[]} cmp {copa-6-[]} -> -1
+{copa-9-[]} cmp {copa-7-[]} -> -1
+{copa-9-[]} cmp {copa-8-[]} -> -1
+{copa-9-[]} cmp {copa-9-[]} -> 0
+{copa-9-[]} cmp {copa-10-[]} -> 1
+{copa-9-[]} cmp {copa-11-[]} -> 1
+{copa-9-[]} cmp {copa-12-[]} -> 1
+{copa-9-[]} cmp {oro-1-[]} -> 1
+{copa-9-[]} cmp {oro-2-[]} -> 1
+{copa-9-[]} cmp {oro-3-[]} -> 1
+{copa-9-[]} cmp {oro-4-[]} -> 1
+{copa-9-[]} cmp {oro-5-[]} -> 1
+{copa-9-[]} cmp {oro-6-[]} -> 1
+{copa-9-[]} cmp {oro-7-[]} -> 1
+{copa-9-[]} cmp {oro-8-[]} -> 1
+{copa-9-[]} cmp {oro-9-[]} -> 1
+{copa-9-[]} cmp {oro-10-[]} -> 1
+{copa-9-[]} cmp {oro-11-[]} -> 1
+{copa-9-[]} cmp {oro-12-[]} -> 1
+{copa-10-[]} cmp {espada-1-[]} -> 1
+{copa-10-[]} cmp {espada-2-[]} -> 1
+{copa-10-[]} cmp {espada-3-[]} -> 1
+{copa-10-[]} cmp {espada-4-[]} -> 1
+{copa-10-[]} cmp {espada-5-[]} -> 1
+{copa-10-[]} cmp {espada-6-[]} -> 1
+{copa-10-[]} cmp {espada-7-[]} -> 1
+{copa-10-[]} cmp {espada-8-[]} -> 1
+{copa-10-[]} cmp {espada-9-[]} -> 1
+{copa-10-[]} cmp {espada-10-[]} -> 1
+{copa-10-[]} cmp {espada-11-[]} -> 1
+{copa-10-[]} cmp {espada-12-[]} -> 1
+{copa-10-[]} cmp {basto-1-[]} -> -1
+{copa-10-[]} cmp {basto-2-[]} -> -1
+{copa-10-[]} cmp {basto-3-[]} -> -1
+{copa-10-[]} cmp {basto-4-[]} -> -1
+{copa-10-[]} cmp {basto-5-[]} -> -1
+{copa-10-[]} cmp {basto-6-[]} -> -1
+{copa-10-[]} cmp {basto-7-[]} -> -1
+{copa-10-[]} cmp {basto-8-[]} -> -1
+{copa-10-[]} cmp {basto-9-[]} -> -1
+{copa-10-[]} cmp {basto-10-[]} -> -1
+{copa-10-[]} cmp {basto-11-[]} -> -1
+{copa-10-[]} cmp {basto-12-[]} -> -1
+{copa-10-[]} cmp {copa-1-[]} -> -1
+{copa-10-[]} cmp {copa-2-[]} -> -1
+{copa-10-[]} cmp {copa-3-[]} -> -1
+{copa-10-[]} cmp {copa-4-[]} -> -1
+{copa-10-[]} cmp {copa-5-[]} -> -1
+{copa-10-[]} cmp {copa-6-[]} -> -1
+{copa-10-[]} cmp {copa-7-[]} -> -1
+{copa-10-[]} cmp {copa-8-[]} -> -1
+{copa-10-[]} cmp {copa-9-[]} -> -1
+{copa-10-[]} cmp {copa-10-[]} -> 0
+{copa-10-[]} cmp {copa-11-[]} -> 1
+{copa-10-[]} cmp {copa-12-[]} -> 1
+{copa-10-[]} cmp {oro-1-[]} -> 1
+{copa-10-[]} cmp {oro-2-[]} -> 1
+{copa-10-[]} cmp {oro-3-[]} -> 1
+{copa-10-[]} cmp {oro-4-[]} -> 1
+{copa-10-[]} cmp {oro-5-[]} -> 1
+{copa-10-[]} cmp {oro-6-[]} -> 1
+{copa-10-[]} cmp {oro-7-[]} -> 1
+{copa-10-[]} cmp {oro-8-[]} -> 1
+{copa-10-[]} cmp {oro-9-[]} -> 1
+{copa-10-[]} cmp {oro-10-[]} -> 1
+{copa-10-[]} cmp {oro-11-[]} -> 1
+{copa-10-[]} cmp {oro-12-[]} -> 1
+{copa-11-[]} cmp {espada-1-[]} -> 1
+{copa-11-[]} cmp {espada-2-[]} -> 1
+{copa-11-[]} cmp {espada-3-[]} -> 1
+{copa-11-[]} cmp {espada-4-[]} -> 1
+{copa-11-[]} cmp {espada-5-[]} -> 1
+{copa-11-[]} cmp {espada-6-[]} -> 1
+{copa-11-[]} cmp {espada-7-[]} -> 1
+{copa-11-[]} cmp {espada-8-[]} -> 1
+{copa-11-[]} cmp {espada-9-[]} -> 1
+{copa-11-[]} cmp {espada-10-[]} -> 1
+{copa-11-[]} cmp {espada-11-[]} -> 1
+{copa-11-[]} cmp {espada-12-[]} -> 1
+{copa-11-[]} cmp {basto-1-[]} -> -1
+{copa-11-[]} cmp {basto-2-[]} -> -1
+{copa-11-[]} cmp {basto-3-[]} -> -1
+{copa-11-[]} cmp {basto-4-[]} -> -1
+{copa-11-[]} cmp {basto-5-[]} -> -1
+{copa-11-[]} cmp {basto-6-[]} -> -1
+{copa-11-[]} cmp {basto-7-[]} -> -1
+{copa-11-[]} cmp {basto-8-[]} -> -1
+{copa-11-[]} cmp {basto-9-[]} -> -1
+{copa-11-[]} cmp {basto-10-[]} -> -1
+{copa-11-[]} cmp {basto-11-[]} -> -1
+{copa-11-[]} cmp {basto-12-[]} -> -1
+{copa-11-[]} cmp {copa-1-[]} -> -1
+{copa-11-[]} cmp {copa-2-[]} -> -1
+{copa-11-[]} cmp {copa-3-[]} -> -1
+{copa-11-[]} cmp {copa-4-[]} -> -1
+{copa-11-[]} cmp {copa-5-[]} -> -1
+{copa-11-[]} cmp {copa-6-[]} -> -1
+{copa-11-[]} cmp {copa-7-[]} -> -1
+{copa-11-[]} cmp {copa-8-[]} -> -1
+{copa-11-[]} cmp {copa-9-[]} -> -1
+{copa-11-[]} cmp {copa-10-[]} -> -1
+{copa-11-[]} cmp {copa-11-[]} -> 0
+{copa-11-[]} cmp {copa-12-[]} -> 1
+{copa-11-[]} cmp {oro-1-[]} -> 1
+{copa-11-[]} cmp {oro-2-[]} -> 1
+{copa-11-[]} cmp {oro-3-[]} -> 1
+{copa-11-[]} cmp {oro-4-[]} -> 1
+{copa-11-[]} cmp {oro-5-[]} -> 1
+{copa-11-[]} cmp {oro-6-[]} -> 1
+{copa-11-[]} cmp {oro-7-[]} -> 1
+{copa-11-[]} cmp {oro-8-[]} -> 1
+{copa-11-[]} cmp {oro-9-[]} -> 1
+{copa-11-[]} cmp {oro-10-[]} -> 1
+{copa-11-[]} cmp {oro-11-[]} -> 1
+{copa-11-[]} cmp {oro-12-[]} -> 1
+{copa-12-[]} cmp {espada-1-[]} -> 1
+{copa-12-[]} cmp {espada-2-[]} -> 1
+{copa-12-[]} cmp {espada-3-[]} -> 1
+{copa-12-[]} cmp {espada-4-[]} -> 1
+{copa-12-[]} cmp {espada-5-[]} -> 1
+{copa-12-[]} cmp {espada-6-[]} -> 1
+{copa-12-[]} cmp {espada-7-[]} -> 1
+{copa-12-[]} cmp {espada-8-[]} -> 1
+{copa-12-[]} cmp {espada-9-[]} -> 1
+{copa-12-[]} cmp {espada-10-[]} -> 1
+{copa-12-[]} cmp {espada-11-[]} -> 1
+{copa-12-[]} cmp {espada-12-[]} -> 1
+{copa-12-[]} cmp {basto-1-[]} -> -1
+{copa-12-[]} cmp {basto-2-[]} -> -1
+{copa-12-[]} cmp {basto-3-[]} -> -1
+{copa-12-[]} cmp {basto-4-[]} -> -1
+{copa-12-[]} cmp {basto-5-[]} -> -1
+{copa-12-[]} cmp {basto-6-[]} -> -1
+{copa-12-[]} cmp {basto-7-[]} -> -1
+{copa-12-[]} cmp {basto-8-[]} -> -1
+{copa-12-[]} cmp {basto-9-[]} -> -1
+{copa-12-[]} cmp {basto-10-[]} -> -1
+{copa-12-[]} cmp {basto-11-[]} -> -1
+{copa-12-[]} cmp {basto-12-[]} -> -1
+{copa-12-[]} cmp {copa-1-[]} -> -1
+{copa-12-[]} cmp {copa-2-[]} -> -1
+{copa-12-[]} cmp {copa-3-[]} -> -1
+{copa-12-[]} cmp {copa-4-[]} -> -1
+{copa-12-[]} cmp {copa-5-[]} -> -1
+{copa-12-[]} cmp {copa-6-[]} -> -1
+{copa-12-[]} cmp {copa-7-[]} -> -1
+{copa-12-[]} cmp {copa-8-[]} -> -1
+{copa-12-[]} cmp {copa-9-[]} -> -1
+{copa-12-[]} cmp {copa-10-[]} -> -1
+{copa-12-[]} cmp {copa-11-[]} -> -1
+{copa-12-[]} cmp {copa-12-[]} -> 0
+{copa-12-[]} cmp {oro-1-[]} -> 1
+{copa-12-[]} cmp {oro-2-[]} -> 1
+{copa-12-[]} cmp {oro-3-[]} -> 1
+{copa-12-[]} cmp {oro-4-[]} -> 1
+{copa-12-[]} cmp {oro-5-[]} -> 1
+{copa-12-[]} cmp {oro-6-[]} -> 1
+{copa-12-[]} cmp {oro-7-[]} -> 1
+{copa-12-[]} cmp {oro-8-[]} -> 1
+{copa-12-[]} cmp {oro-9-[]} -> 1
+{copa-12-[]} cmp {oro-10-[]} -> 1
+{copa-12-[]} cmp {oro-11-[]} -> 1
+{copa-12-[]} cmp {oro-12-[]} -> 1
+{oro-1-[]} cmp {espada-1-[]} -> -1
+{oro-1-[]} cmp {espada-2-[]} -> -1
+{oro-1-[]} cmp {espada-3-[]} -> -1
+{oro-1-[]} cmp {espada-4-[]} -> -1
+{oro-1-[]} cmp {espada-5-[]} -> -1
+{oro-1-[]} cmp {espada-6-[]} -> -1
+{oro-1-[]} cmp {espada-7-[]} -> -1
+{oro-1-[]} cmp {espada-8-[]} -> -1
+{oro-1-[]} cmp {espada-9-[]} -> -1
+{oro-1-[]} cmp {espada-10-[]} -> -1
+{oro-1-[]} cmp {espada-11-[]} -> -1
+{oro-1-[]} cmp {espada-12-[]} -> -1
+{oro-1-[]} cmp {basto-1-[]} -> -1
+{oro-1-[]} cmp {basto-2-[]} -> -1
+{oro-1-[]} cmp {basto-3-[]} -> -1
+{oro-1-[]} cmp {basto-4-[]} -> -1
+{oro-1-[]} cmp {basto-5-[]} -> -1
+{oro-1-[]} cmp {basto-6-[]} -> -1
+{oro-1-[]} cmp {basto-7-[]} -> -1
+{oro-1-[]} cmp {basto-8-[]} -> -1
+{oro-1-[]} cmp {basto-9-[]} -> -1
+{oro-1-[]} cmp {basto-10-[]} -> -1
+{oro-1-[]} cmp {basto-11-[]} -> -1
+{oro-1-[]} cmp {basto-12-[]} -> -1
+{oro-1-[]} cmp {copa-1-[]} -> -1
+{oro-1-[]} cmp {copa-2-[]} -> -1
+{oro-1-[]} cmp {copa-3-[]} -> -1
+{oro-1-[]} cmp {copa-4-[]} -> -1
+{oro-1-[]} cmp {copa-5-[]} -> -1
+{oro-1-[]} cmp {copa-6-[]} -> -1
+{oro-1-[]} cmp {copa-7-[]} -> -1
+{oro-1-[]} cmp {copa-8-[]} -> -1
+{oro-1-[]} cmp {copa-9-[]} -> -1
+{oro-1-[]} cmp {copa-10-[]} -> -1
+{oro-1-[]} cmp {copa-11-[]} -> -1
+{oro-1-[]} cmp {copa-12-[]} -> -1
+{oro-1-[]} cmp {oro-1-[]} -> 0
+{oro-1-[]} cmp {oro-2-[]} -> 1
+{oro-1-[]} cmp {oro-3-[]} -> 1
+{oro-1-[]} cmp {oro-4-[]} -> 1
+{oro-1-[]} cmp {oro-5-[]} -> 1
+{oro-1-[]} cmp {oro-6-[]} -> 1
+{oro-1-[]} cmp {oro-7-[]} -> 1
+{oro-1-[]} cmp {oro-8-[]} -> 1
+{oro-1-[]} cmp {oro-9-[]} -> 1
+{oro-1-[]} cmp {oro-10-[]} -> 1
+{oro-1-[]} cmp {oro-11-[]} -> 1
+{oro-1-[]} cmp {oro-12-[]} -> 1
+{oro-2-[]} cmp {espada-1-[]} -> -1
+{oro-2-[]} cmp {espada-2-[]} -> -1
+{oro-2-[]} cmp {espada-3-[]} -> -1
+{oro-2-[]} cmp {espada-4-[]} -> -1
+{oro-2-[]} cmp {espada-5-[]} -> -1
+{oro-2-[]} cmp {espada-6-[]} -> -1
+{oro-2-[]} cmp {espada-7-[]} -> -1
+{oro-2-[]} cmp {espada-8-[]} -> -1
+{oro-2-[]} cmp {espada-9-[]} -> -1
+{oro-2-[]} cmp {espada-10-[]} -> -1
+{oro-2-[]} cmp {espada-11-[]} -> -1
+{oro-2-[]} cmp {espada-12-[]} -> -1
+{oro-2-[]} cmp {basto-1-[]} -> -1
+{oro-2-[]} cmp {basto-2-[]} -> -1
+{oro-2-[]} cmp {basto-3-[]} -> -1
+{oro-2-[]} cmp {basto-4-[]} -> -1
+{oro-2-[]} cmp {basto-5-[]} -> -1
+{oro-2-[]} cmp {basto-6-[]} -> -1
+{oro-2-[]} cmp {basto-7-[]} -> -1
+{oro-2-[]} cmp {basto-8-[]} -> -1
+{oro-2-[]} cmp {basto-9-[]} -> -1
+{oro-2-[]} cmp {basto-10-[]} -> -1
+{oro-2-[]} cmp {basto-11-[]} -> -1
+{oro-2-[]} cmp {basto-12-[]} -> -1
+{oro-2-[]} cmp {copa-1-[]} -> -1
+{oro-2-[]} cmp {copa-2-[]} -> -1
+{oro-2-[]} cmp {copa-3-[]} -> -1
+{oro-2-[]} cmp {copa-4-[]} -> -1
+{oro-2-[]} cmp {copa-5-[]} -> -1
+{oro-2-[]} cmp {copa-6-[]} -> -1
+{oro-2-[]} cmp {copa-7-[]} -> -1
+{oro-2-[]} cmp {copa-8-[]} -> -1
+{oro-2-[]} cmp {copa-9-[]} -> -1
+{oro-2-[]} cmp {copa-10-[]} -> -1
+{oro-2-[]} cmp {copa-11-[]} -> -1
+{oro-2-[]} cmp {copa-12-[]} -> -1
+{oro-2-[]} cmp {oro-1-[]} -> -1
+{oro-2-[]} cmp {oro-2-[]} -> 0
+{oro-2-[]} cmp {oro-3-[]} -> 1
+{oro-2-[]} cmp {oro-4-[]} -> 1
+{oro-2-[]} cmp {oro-5-[]} -> 1
+{oro-2-[]} cmp {oro-6-[]} -> 1
+{oro-2-[]} cmp {oro-7-[]} -> 1
+{oro-2-[]} cmp {oro-8-[]} -> 1
+{oro-2-[]} cmp {oro-9-[]} -> 1
+{oro-2-[]} cmp {oro-10-[]} -> 1
+{oro-2-[]} cmp {oro-11-[]} -> 1
+{oro-2-[]} cmp {oro-12-[]} -> 1
+{oro-3-[]} cmp {espada-1-[]} -> -1
+{oro-3-[]} cmp {espada-2-[]} -> -1
+{oro-3-[]} cmp {espada-3-[]} -> -1
+{oro-3-[]} cmp {espada-4-[]} -> -1
+{oro-3-[]} cmp {espada-5-[]} -> -1
+{oro-3-[]} cmp {espada-6-[]} -> -1
+{oro-3-[]} cmp {espada-7-[]} -> -1
+{oro-3-[]} cmp {espada-8-[]} -> -1
+{oro-3-[]} cmp {espada-9-[]} -> -1
+{oro-3-[]} cmp {espada-10-[]} -> -1
+{oro-3-[]} cmp {espada-11-[]} -> -1
+{oro-3-[]} cmp {espada-12-[]} -> -1
+{oro-3-[]} cmp {basto-1-[]} -> -1
+{oro-3-[]} cmp {basto-2-[]} -> -1
+{oro-3-[]} cmp {basto-3-[]} -> -1
+{oro-3-[]} cmp {basto-4-[]} -> -1
+{oro-3-[]} cmp {basto-5-[]} -> -1
+{oro-3-[]} cmp {basto-6-[]} -> -1
+{oro-3-[]} cmp {basto-7-[]} -> -1
+{oro-3-[]} cmp {basto-8-[]} -> -1
+{oro-3-[]} cmp {basto-9-[]} -> -1
+{oro-3-[]} cmp {basto-10-[]} -> -1
+{oro-3-[]} cmp {basto-11-[]} -> -1
+{oro-3-[]} cmp {basto-12-[]} -> -1
+{oro-3-[]} cmp {copa-1-[]} -> -1
+{oro-3-[]} cmp {copa-2-[]} -> -1
+{oro-3-[]} cmp {copa-3-[]} -> -1
+{oro-3-[]} cmp {copa-4-[]} -> -1
+{oro-3-[]} cmp {copa-5-[]} -> -1
+{oro-3-[]} cmp {copa-6-[]} -> -1
+{oro-3-[]} cmp {copa-7-[]} -> -1
+{oro-3-[]} cmp {copa-8-[]} -> -1
+{oro-3-[]} cmp {copa-9-[]} -> -1
+{oro-3-[]} cmp {copa-10-[]} -> -1
+{oro-3-[]} cmp {copa-11-[]} -> -1
+{oro-3-[]} cmp {copa-12-[]} -> -1
+{oro-3-[]} cmp {oro-1-[]} -> -1
+{oro-3-[]} cmp {oro-2-[]} -> -1
+{oro-3-[]} cmp {oro-3-[]} -> 0
+{oro-3-[]} cmp {oro-4-[]} -> 1
+{oro-3-[]} cmp {oro-5-[]} -> 1
+{oro-3-[]} cmp {oro-6-[]} -> 1
+{oro-3-[]} cmp {oro-7-[]} -> 1
+{oro-3-[]} cmp {oro-8-[]} -> 1
+{oro-3-[]} cmp {oro-9-[]} -> 1
+{oro-3-[]} cmp {oro-10-[]} -> 1
+{oro-3-[]} cmp {oro-11-[]} -> 1
+{oro-3-[]} cmp {oro-12-[]} -> 1
+{oro-4-[]} cmp {espada-1-[]} -> -1
+{oro-4-[]} cmp {espada-2-[]} -> -1
+{oro-4-[]} cmp {espada-3-[]} -> -1
+{oro-4-[]} cmp {espada-4-[]} -> -1
+{oro-4-[]} cmp {espada-5-[]} -> -1
+{oro-4-[]} cmp {espada-6-[]} -> -1
+{oro-4-[]} cmp {espada-7-[]} -> -1
+{oro-4-[]} cmp {espada-8-[]} -> -1
+{oro-4-[]} cmp {espada-9-[]} -> -1
+{oro-4-[]} cmp {espada-10-[]} -> -1
+{oro-4-[]} cmp {espada-11-[]} -> -1
+{oro-4-[]} cmp {espada-12-[]} -> -1
+{oro-4-[]} cmp {basto-1-[]} -> -1
+{oro-4-[]} cmp {basto-2-[]} -> -1
+{oro-4-[]} cmp {basto-3-[]} -> -1
+{oro-4-[]} cmp {basto-4-[]} -> -1
+{oro-4-[]} cmp {basto-5-[]} -> -1
+{oro-4-[]} cmp {basto-6-[]} -> -1
+{oro-4-[]} cmp {basto-7-[]} -> -1
+{oro-4-[]} cmp {basto-8-[]} -> -1
+{oro-4-[]} cmp {basto-9-[]} -> -1
+{oro-4-[]} cmp {basto-10-[]} -> -1
+{oro-4-[]} cmp {basto-11-[]} -> -1
+{oro-4-[]} cmp {basto-12-[]} -> -1
+{oro-4-[]} cmp {copa-1-[]} -> -1
+{oro-4-[]} cmp {copa-2-[]} -> -1
+{oro-4-[]} cmp {copa-3-[]} -> -1
+{oro-4-[]} cmp {copa-4-[]} -> -1
+{oro-4-[]} cmp {copa-5-[]} -> -1
+{oro-4-[]} cmp {copa-6-[]} -> -1
+{oro-4-[]} cmp {copa-7-[]} -> -1
+{oro-4-[]} cmp {copa-8-[]} -> -1
+{oro-4-[]} cmp {copa-9-[]} -> -1
+{oro-4-[]} cmp {copa-10-[]} -> -1
+{oro-4-[]} cmp {copa-11-[]} -> -1
+{oro-4-[]} cmp {copa-12-[]} -> -1
+{oro-4-[]} cmp {oro-1-[]} -> -1
+{oro-4-[]} cmp {oro-2-[]} -> -1
+{oro-4-[]} cmp {oro-3-[]} -> -1
+{oro-4-[]} cmp {oro-4-[]} -> 0
+{oro-4-[]} cmp {oro-5-[]} -> 1
+{oro-4-[]} cmp {oro-6-[]} -> 1
+{oro-4-[]} cmp {oro-7-[]} -> 1
+{oro-4-[]} cmp {oro-8-[]} -> 1
+{oro-4-[]} cmp {oro-9-[]} -> 1
+{oro-4-[]} cmp {oro-10-[]} -> 1
+{oro-4-[]} cmp {oro-11-[]} -> 1
+{oro-4-[]} cmp {oro-12-[]} -> 1
+{oro-5-[]} cmp {espada-1-[]} -> -1
+{oro-5-[]} cmp {espada-2-[]} -> -1
+{oro-5-[]} cmp {espada-3-[]} -> -1
+{oro-5-[]} cmp {espada-4-[]} -> -1
+{oro-5-[]} cmp {espada-5-[]} -> -1
+{oro-5-[]} cmp {espada-6-[]} -> -1
+{oro-5-[]} cmp {espada-7-[]} -> -1
+{oro-5-[]} cmp {espada-8-[]} -> -1
+{oro-5-[]} cmp {espada-9-[]} -> -1
+{oro-5-[]} cmp {espada-10-[]} -> -1
+{oro-5-[]} cmp {espada-11-[]} -> -1
+{oro-5-[]} cmp {espada-12-[]} -> -1
+{oro-5-[]} cmp {basto-1-[]} -> -1
+{oro-5-[]} cmp {basto-2-[]} -> -1
+{oro-5-[]} cmp {basto-3-[]} -> -1
+{oro-5-[]} cmp {basto-4-[]} -> -1
+{oro-5-[]} cmp {basto-5-[]} -> -1
+{oro-5-[]} cmp {basto-6-[]} -> -1
+{oro-5-[]} cmp {basto-7-[]} -> -1
+{oro-5-[]} cmp {basto-8-[]} -> -1
+{oro-5-[]} cmp {basto-9-[]} -> -1
+{oro-5-[]} cmp {basto-10-[]} -> -1
+{oro-5-[]} cmp {basto-11-[]} -> -1
+{oro-5-[]} cmp {basto-12-[]} -> -1
+{oro-5-[]} cmp {copa-1-[]} -> -1
+{oro-5-[]} cmp {copa-2-[]} -> -1
+{oro-5-[]} cmp {copa-3-[]} -> -1
+{oro-5-[]} cmp {copa-4-[]} -> -1
+{oro-5-[]} cmp {copa-5-[]} -> -1
+{oro-5-[]} cmp {copa-6-[]} -> -1
+{oro-5-[]} cmp {copa-7-[]} -> -1
+{oro-5-[]} cmp {copa-8-[]} -> -1
+{oro-5-[]} cmp {copa-9-[]} -> -1
+{oro-5-[]} cmp {copa-10-[]} -> -1
+{oro-5-[]} cmp {copa-11-[]} -> -1
+{oro-5-[]} cmp {copa-12-[]} -> -1
+{oro-5-[]} cmp {oro-1-[]} -> -1
+{oro-5-[]} cmp {oro-2-[]} -> -1
+{oro-5-[]} cmp {oro-3-[]} -> -1
+{oro-5-[]} cmp {oro-4-[]} -> -1
+{oro-5-[]} cmp {oro-5-[]} -> 0
+{oro-5-[]} cmp {oro-6-[]} -> 1
+{oro-5-[]} cmp {oro-7-[]} -> 1
+{oro-5-[]} cmp {oro-8-[]} -> 1
+{oro-5-[]} cmp {oro-9-[]} -> 1
+{oro-5-[]} cmp {oro-10-[]} -> 1
+{oro-5-[]} cmp {oro-11-[]} -> 1
+{oro-5-[]} cmp {oro-12-[]} -> 1
+{oro-6-[]} cmp {espada-1-[]} -> -1
+{oro-6-[]} cmp {espada-2-[]} -> -1
+{oro-6-[]} cmp {espada-3-[]} -> -1
+{oro-6-[]} cmp {espada-4-[]} -> -1
+{oro-6-[]} cmp {espada-5-[]} -> -1
+{oro-6-[]} cmp {espada-6-[]} -> -1
+{oro-6-[]} cmp {espada-7-[]} -> -1
+{oro-6-[]} cmp {espada-8-[]} -> -1
+{oro-6-[]} cmp {espada-9-[]} -> -1
+{oro-6-[]} cmp {espada-10-[]} -> -1
+{oro-6-[]} cmp {espada-11-[]} -> -1
+{oro-6-[]} cmp {espada-12-[]} -> -1
+{oro-6-[]} cmp {basto-1-[]} -> -1
+{oro-6-[]} cmp {basto-2-[]} -> -1
+{oro-6-[]} cmp {basto-3-[]} -> -1
+{oro-6-[]} cmp {basto-4-[]} -> -1
+{oro-6-[]} cmp {basto-5-[]} -> -1
+{oro-6-[]} cmp {basto-6-[]} -> -1
+{oro-6-[]} cmp {basto-7-[]} -> -1
+{oro-6-[]} cmp {basto-8-[]} -> -1
+{oro-6-[]} cmp {basto-9-[]} -> -1
+{oro-6-[]} cmp {basto-10-[]} -> -1
+{oro-6-[]} cmp {basto-11-[]} -> -1
+{oro-6-[]} cmp {basto-12-[]} -> -1
+{oro-6-[]} cmp {copa-1-[]} -> -1
+{oro-6-[]} cmp {copa-2-[]} -> -1
+{oro-6-[]} cmp {copa-3-[]} -> -1
+{oro-6-[]} cmp {copa-4-[]} -> -1
+{oro-6-[]} cmp {copa-5-[]} -> -1
+{oro-6-[]} cmp {copa-6-[]} -> -1
+{oro-6-[]} cmp {copa-7-[]} -> -1
+{oro-6-[]} cmp {copa-8-[]} -> -1
+{oro-6-[]} cmp {copa-9-[]} -> -1
+{oro-6-[]} cmp {copa-10-[]} -> -1
+{oro-6-[]} cmp {copa-11-[]} -> -1
+{oro-6-[]} cmp {copa-12-[]} -> -1
+{oro-6-[]} cmp {oro-1-[]} -> -1
+{oro-6-[]} cmp {oro-2-[]} -> -1
+{oro-6-[]} cmp {oro-3-[]} -> -1
+{oro-6-[]} cmp {oro-4-[]} -> -1
+{oro-6-[]} cmp {oro-5-[]} -> -1
+{oro-6-[]} cmp {oro-6-[]} -> 0
+{oro-6-[]} cmp {oro-7-[]} -> 1
+{oro-6-[]} cmp {oro-8-[]} -> 1
+{oro-6-[]} cmp {oro-9-[]} -> 1
+{oro-6-[]} cmp {oro-10-[]} -> 1
+{oro-6-[]} cmp {oro-11-[]} -> 1
+{oro-6-[]} cmp {oro-12-[]} -> 1
+{oro-7-[]} cmp {espada-1-[]} -> -1
+{oro-7-[]} cmp {espada-2-[]} -> -1
+{oro-7-[]} cmp {espada-3-[]} -> -1
+{oro-7-[]} cmp {espada-4-[]} -> -1
+{oro-7-[]} cmp {espada-5-[]} -> -1
+{oro-7-[]} cmp {espada-6-[]} -> -1
+{oro-7-[]} cmp {espada-7-[]} -> -1
+{oro-7-[]} cmp {espada-8-[]} -> -1
+{oro-7-[]} cmp {espada-9-[]} -> -1
+{oro-7-[]} cmp {espada-10-[]} -> -1
+{oro-7-[]} cmp {espada-11-[]} -> -1
+{oro-7-[]} cmp {espada-12-[]} -> -1
+{oro-7-[]} cmp {basto-1-[]} -> -1
+{oro-7-[]} cmp {basto-2-[]} -> -1
+{oro-7-[]} cmp {basto-3-[]} -> -1
+{oro-7-[]} cmp {basto-4-[]} -> -1
+{oro-7-[]} cmp {basto-5-[]} -> -1
+{oro-7-[]} cmp {basto-6-[]} -> -1
+{oro-7-[]} cmp {basto-7-[]} -> -1
+{oro-7-[]} cmp {basto-8-[]} -> -1
+{oro-7-[]} cmp {basto-9-[]} -> -1
+{oro-7-[]} cmp {basto-10-[]} -> -1
+{oro-7-[]} cmp {basto-11-[]} -> -1
+{oro-7-[]} cmp {basto-12-[]} -> -1
+{oro-7-[]} cmp {copa-1-[]} -> -1
+{oro-7-[]} cmp {copa-2-[]} -> -1
+{oro-7-[]} cmp {copa-3-[]} -> -1
+{oro-7-[]} cmp {copa-4-[]} -> -1
+{oro-7-[]} cmp {copa-5-[]} -> -1
+{oro-7-[]} cmp {copa-6-[]} -> -1
+{oro-7-[]} cmp {copa-7-[]} -> -1
+{oro-7-[]} cmp {copa-8-[]} -> -1
+{oro-7-[]} cmp {copa-9-[]} -> -1
+{oro-7-[]} cmp {copa-10-[]} -> -1
+{oro-7-[]} cmp {copa-11-[]} -> -1
+{oro-7-[]} cmp {copa-12-[]} -> -1
+{oro-7-[]} cmp {oro-1-[]} -> -1
+{oro-7-[]} cmp {oro-2-[]} -> -1
+{oro-7-[]} cmp {oro-3-[]} -> -1
+{oro-7-[]} cmp {oro-4-[]} -> -1
+{oro-7-[]} cmp {oro-5-[]} -> -1
+{oro-7-[]} cmp {oro-6-[]} -> -1
+{oro-7-[]} cmp {oro-7-[]} -> 0
+{oro-7-[]} cmp {oro-8-[]} -> 1
+{oro-7-[]} cmp {oro-9-[]} -> 1
+{oro-7-[]} cmp {oro-10-[]} -> 1
+{oro-7-[]} cmp {oro-11-[]} -> 1
+{oro-7-[]} cmp {oro-12-[]} -> 1
+{oro-8-[]} cmp {espada-1-[]} -> -1
+{oro-8-[]} cmp {espada-2-[]} -> -1
+{oro-8-[]} cmp {espada-3-[]} -> -1
+{oro-8-[]} cmp {espada-4-[]} -> -1
+{oro-8-[]} cmp {espada-5-[]} -> -1
+{oro-8-[]} cmp {espada-6-[]} -> -1
+{oro-8-[]} cmp {espada-7-[]} -> -1
+{oro-8-[]} cmp {espada-8-[]} -> -1
+{oro-8-[]} cmp {espada-9-[]} -> -1
+{oro-8-[]} cmp {espada-10-[]} -> -1
+{oro-8-[]} cmp {espada-11-[]} -> -1
+{oro-8-[]} cmp {espada-12-[]} -> -1
+{oro-8-[]} cmp {basto-1-[]} -> -1
+{oro-8-[]} cmp {basto-2-[]} -> -1
+{oro-8-[]} cmp {basto-3-[]} -> -1
+{oro-8-[]} cmp {basto-4-[]} -> -1
+{oro-8-[]} cmp {basto-5-[]} -> -1
+{oro-8-[]} cmp {basto-6-[]} -> -1
+{oro-8-[]} cmp {basto-7-[]} -> -1
+{oro-8-[]} cmp {basto-8-[]} -> -1
+{oro-8-[]} cmp {basto-9-[]} -> -1
+{oro-8-[]} cmp {basto-10-[]} -> -1
+{oro-8-[]} cmp {basto-11-[]} -> -1
+{oro-8-[]} cmp {basto-12-[]} -> -1
+{oro-8-[]} cmp {copa-1-[]} -> -1
+{oro-8-[]} cmp {copa-2-[]} -> -1
+{oro-8-[]} cmp {copa-3-[]} -> -1
+{oro-8-[]} cmp {copa-4-[]} -> -1
+{oro-8-[]} cmp {copa-5-[]} -> -1
+{oro-8-[]} cmp {copa-6-[]} -> -1
+{oro-8-[]} cmp {copa-7-[]} -> -1
+{oro-8-[]} cmp {copa-8-[]} -> -1
+{oro-8-[]} cmp {copa-9-[]} -> -1
+{oro-8-[]} cmp {copa-10-[]} -> -1
+{oro-8-[]} cmp {copa-11-[]} -> -1
+{oro-8-[]} cmp {copa-12-[]} -> -1
+{oro-8-[]} cmp {oro-1-[]} -> -1
+{oro-8-[]} cmp {oro-2-[]} -> -1
+{oro-8-[]} cmp {oro-3-[]} -> -1
+{oro-8-[]} cmp {oro-4-[]} -> -1
+{oro-8-[]} cmp {oro-5-[]} -> -1
+{oro-8-[]} cmp {oro-6-[]} -> -1
+{oro-8-[]} cmp {oro-7-[]} -> -1
+{oro-8-[]} cmp {oro-8-[]} -> 0
+{oro-8-[]} cmp {oro-9-[]} -> 1
+{oro-8-[]} cmp {oro-10-[]} -> 1
+{oro-8-[]} cmp {oro-11-[]} -> 1
+{oro-8-[]} cmp {oro-12-[]} -> 1
+{oro-9-[]} cmp {espada-1-[]} -> -1
+{oro-9-[]} cmp {espada-2-[]} -> -1
+{oro-9-[]} cmp {espada-3-[]} -> -1
+{oro-9-[]} cmp {espada-4-[]} -> -1
+{oro-9-[]} cmp {espada-5-[]} -> -1
+{oro-9-[]} cmp {espada-6-[]} -> -1
+{oro-9-[]} cmp {espada-7-[]} -> -1
+{oro-9-[]} cmp {espada-8-[]} -> -1
+{oro-9-[]} cmp {espada-9-[]} -> -1
+{oro-9-[]} cmp {espada-10-[]} -> -1
+{oro-9-[]} cmp {espada-11-[]} -> -1
+{oro-9-[]} cmp {espada-12-[]} -> -1
+{oro-9-[]} cmp {basto-1-[]} -> -1
+{oro-9-[]} cmp {basto-2-[]} -> -1
+{oro-9-[]} cmp {basto-3-[]} -> -1
+{oro-9-[]} cmp {basto-4-[]} -> -1
+{oro-9-[]} cmp {basto-5-[]} -> -1
+{oro-9-[]} cmp {basto-6-[]} -> -1
+{oro-9-[]} cmp {basto-7-[]} -> -1
+{oro-9-[]} cmp {basto-8-[]} -> -1
+{oro-9-[]} cmp {basto-9-[]} -> -1
+{oro-9-[]} cmp {basto-10-[]} -> -1
+{oro-9-[]} cmp {basto-11-[]} -> -1
+{oro-9-[]} cmp {basto-12-[]} -> -1
+{oro-9-[]} cmp {copa-1-[]} -> -1
+{oro-9-[]} cmp {copa-2-[]} -> -1
+{oro-9-[]} cmp {copa-3-[]} -> -1
+{oro-9-[]} cmp {copa-4-[]} -> -1
+{oro-9-[]} cmp {copa-5-[]} -> -1
+{oro-9-[]} cmp {copa-6-[]} -> -1
+{oro-9-[]} cmp {copa-7-[]} -> -1
+{oro-9-[]} cmp {copa-8-[]} -> -1
+{oro-9-[]} cmp {copa-9-[]} -> -1
+{oro-9-[]} cmp {copa-10-[]} -> -1
+{oro-9-[]} cmp {copa-11-[]} -> -1
+{oro-9-[]} cmp {copa-12-[]} -> -1
+{oro-9-[]} cmp {oro-1-[]} -> -1
+{oro-9-[]} cmp {oro-2-[]} -> -1
+{oro-9-[]} cmp {oro-3-[]} -> -1
+{oro-9-[]} cmp {oro-4-[]} -> -1
+{oro-9-[]} cmp {oro-5-[]} -> -1
+{oro-9-[]} cmp {oro-6-[]} -> -1
+{oro-9-[]} cmp {oro-7-[]} -> -1
+{oro-9-[]} cmp {oro-8-[]} -> -1
+{oro-9-[]} cmp {oro-9-[]} -> 0
+{oro-9-[]} cmp {oro-10-[]} -> 1
+{oro-9-[]} cmp {oro-11-[]} -> 1
+{oro-9-[]} cmp {oro-12-[]} -> 1
+{oro-10-[]} cmp {espada-1-[]} -> -1
+{oro-10-[]} cmp {espada-2-[]} -> -1
+{oro-10-[]} cmp {espada-3-[]} -> -1
+{oro-10-[]} cmp {espada-4-[]} -> -1
+{oro-10-[]} cmp {espada-5-[]} -> -1
+{oro-10-[]} cmp {espada-6-[]} -> -1
+{oro-10-[]} cmp {espada-7-[]} -> -1
+{oro-10-[]} cmp {espada-8-[]} -> -1
+{oro-10-[]} cmp {espada-9-[]} -> -1
+{oro-10-[]} cmp {espada-10-[]} -> -1
+{oro-10-[]} cmp {espada-11-[]} -> -1
+{oro-10-[]} cmp {espada-12-[]} -> -1
+{oro-10-[]} cmp {basto-1-[]} -> -1
+{oro-10-[]} cmp {basto-2-[]} -> -1
+{oro-10-[]} cmp {basto-3-[]} -> -1
+{oro-10-[]} cmp {basto-4-[]} -> -1
+{oro-10-[]} cmp {basto-5-[]} -> -1
+{oro-10-[]} cmp {basto-6-[]} -> -1
+{oro-10-[]} cmp {basto-7-[]} -> -1
+{oro-10-[]} cmp {basto-8-[]} -> -1
+{oro-10-[]} cmp {basto-9-[]} -> -1
+{oro-10-[]} cmp {basto-10-[]} -> -1
+{oro-10-[]} cmp {basto-11-[]} -> -1
+{oro-10-[]} cmp {basto-12-[]} -> -1
+{oro-10-[]} cmp {copa-1-[]} -> -1
+{oro-10-[]} cmp {copa-2-[]} -> -1
+{oro-10-[]} cmp {copa-3-[]} -> -1
+{oro-10-[]} cmp {copa-4-[]} -> -1
+{oro-10-[]} cmp {copa-5-[]} -> -1
+{oro-10-[]} cmp {copa-6-[]} -> -1
+{oro-10-[]} cmp {copa-7-[]} -> -1
+{oro-10-[]} cmp {copa-8-[]} -> -1
+{oro-10-[]} cmp {copa-9-[]} -> -1
+{oro-10-[]} cmp {copa-10-[]} -> -1
+{oro-10-[]} cmp {copa-11-[]} -> -1
+{oro-10-[]} cmp {copa-12-[]} -> -1
+{oro-10-[]} cmp {oro-1-[]} -> -1
+{oro-10-[]} cmp {oro-2-[]} -> -1
+{oro-10-[]} cmp {oro-3-[]} -> -1
+{oro-10-[]} cmp {oro-4-[]} -> -1
+{oro-10-[]} cmp {oro-5-[]} -> -1
+{oro-10-[]} cmp {oro-6-[]} -> -1
+{oro-10-[]} cmp {oro-7-[]} -> -1
+{oro-10-[]} cmp {oro-8-[]} -> -1
+{oro-10-[]} cmp {oro-9-[]} -> -1
+{oro-10-[]} cmp {oro-10-[]} -> 0
+{oro-10-[]} cmp {oro-11-[]} -> 1
+{oro-10-[]} cmp {oro-12-[]} -> 1
+{oro-11-[]} cmp {espada-1-[]} -> -1
+{oro-11-[]} cmp {espada-2-[]} -> -1
+{oro-11-[]} cmp {espada-3-[]} -> -1
+{oro-11-[]} cmp {espada-4-[]} -> -1
+{oro-11-[]} cmp {espada-5-[]} -> -1
+{oro-11-[]} cmp {espada-6-[]} -> -1
+{oro-11-[]} cmp {espada-7-[]} -> -1
+{oro-11-[]} cmp {espada-8-[]} -> -1
+{oro-11-[]} cmp {espada-9-[]} -> -1
+{oro-11-[]} cmp {espada-10-[]} -> -1
+{oro-11-[]} cmp {espada-11-[]} -> -1
+{oro-11-[]} cmp {espada-12-[]} -> -1
+{oro-11-[]} cmp {basto-1-[]} -> -1
+{oro-11-[]} cmp {basto-2-[]} -> -1
+{oro-11-[]} cmp {basto-3-[]} -> -1
+{oro-11-[]} cmp {basto-4-[]} -> -1
+{oro-11-[]} cmp {basto-5-[]} -> -1
+{oro-11-[]} cmp {basto-6-[]} -> -1
+{oro-11-[]} cmp {basto-7-[]} -> -1
+{oro-11-[]} cmp {basto-8-[]} -> -1
+{oro-11-[]} cmp {basto-9-[]} -> -1
+{oro-11-[]} cmp {basto-10-[]} -> -1
+{oro-11-[]} cmp {basto-11-[]} -> -1
+{oro-11-[]} cmp {basto-12-[]} -> -1
+{oro-11-[]} cmp {copa-1-[]} -> -1
+{oro-11-[]} cmp {copa-2-[]} -> -1
+{oro-11-[]} cmp {copa-3-[]} -> -1
+{oro-11-[]} cmp {copa-4-[]} -> -1
+{oro-11-[]} cmp {copa-5-[]} -> -1
+{oro-11-[]} cmp {copa-6-[]} -> -1
+{oro-11-[]} cmp {copa-7-[]} -> -1
+{oro-11-[]} cmp {copa-8-[]} -> -1
+{oro-11-[]} cmp {copa-9-[]} -> -1
+{oro-11-[]} cmp {copa-10-[]} -> -1
+{oro-11-[]} cmp {copa-11-[]} -> -1
+{oro-11-[]} cmp {copa-12-[]} -> -1
+{oro-11-[]} cmp {oro-1-[]} -> -1
+{oro-11-[]} cmp {oro-2-[]} -> -1
+{oro-11-[]} cmp {oro-3-[]} -> -1
+{oro-11-[]} cmp {oro-4-[]} -> -1
+{oro-11-[]} cmp {oro-5-[]} -> -1
+{oro-11-[]} cmp {oro-6-[]} -> -1
+{oro-11-[]} cmp {oro-7-[]} -> -1
+{oro-11-[]} cmp {oro-8-[]} -> -1
+{oro-11-[]} cmp {oro-9-[]} -> -1
+{oro-11-[]} cmp {oro-10-[]} -> -1
+{oro-11-[]} cmp {oro-11-[]} -> 0
+{oro-11-[]} cmp {oro-12-[]} -> 1
+{oro-12-[]} cmp {espada-1-[]} -> -1
+{oro-12-[]} cmp {espada-2-[]} -> -1
+{oro-12-[]} cmp {espada-3-[]} -> -1
+{oro-12-[]} cmp {espada-4-[]} -> -1
+{oro-12-[]} cmp {espada-5-[]} -> -1
+{oro-12-[]} cmp {espada-6-[]} -> -1
+{oro-12-[]} cmp {espada-7-[]} -> -1
+{oro-12-[]} cmp {espada-8-[]} -> -1
+{oro-12-[]} cmp {espada-9-[]} -> -1
+{oro-12-[]} cmp {espada-10-[]} -> -1
+{oro-12-[]} cmp {espada-11-[]} -> -1
+{oro-12-[]} cmp {espada-12-[]} -> -1
+{oro-12-[]} cmp {basto-1-[]} -> -1
+{oro-12-[]} cmp {basto-2-[]} -> -1
+{oro-12-[]} cmp {basto-3-[]} -> -1
+{oro-12-[]} cmp {basto-4-[]} -> -1
+{oro-12-[]} cmp {basto-5-[]} -> -1
+{oro-12-[]} cmp {basto-6-[]} -> -1
+{oro-12-[]} cmp {basto-7-[]} -> -1
+{oro-12-[]} cmp {basto-8-[]} -> -1
+{oro-12-[]} cmp {basto-9-[]} -> -1
+{oro-12-[]} cmp {basto-10-[]} -> -1
+{oro-12-[]} cmp {basto-11-[]} -> -1
+{oro-12-[]} cmp {basto-12-[]} -> -1
+{oro-12-[]} cmp {copa-1-[]} -> -1
+{oro-12-[]} cmp {copa-2-[]} -> -1
+{oro-12-[]} cmp {copa-3-[]} -> -1
+{oro-12-[]} cmp {copa-4-[]} -> -1
+{oro-12-[]} cmp {copa-5-[]} -> -1
+{oro-12-[]} cmp {copa-6-[]} -> -1
+{oro-12-[]} cmp {copa-7-[]} -> -1
+{oro-12-[]} cmp {copa-8-[]} -> -1
+{oro-12-[]} cmp {copa-9-[]} -> -1
+{oro-12-[]} cmp {copa-10-[]} -> -1
+{oro-12-[]} cmp {copa-11-[]} -> -1
+{oro-12-[]} cmp {copa-12-[]} -> -1
+{oro-12-[]} cmp {oro-1-[]} -> -1
+{oro-12-[]} cmp {oro-2-[]} -> -1
+{oro-12-[]} cmp {oro-3-[]} -> -1
+{oro-12-[]} cmp {oro-4-[]} -> -1
+{oro-12-[]} cmp {oro-5-[]} -> -1
+{oro-12-[]} cmp {oro-6-[]} -> -1
+{oro-12-[]} cmp {oro-7-[]} -> -1
+{oro-12-[]} cmp {oro-8-[]} -> -1
+{oro-12-[]} cmp {oro-9-[]} -> -1
+{oro-12-[]} cmp {oro-10-[]} -> -1
+{oro-12-[]} cmp {oro-11-[]} -> -1
+{oro-12-[]} cmp {oro-12-[]} -> 0
+
+Apilando
+
+{espada-1-[{espada-2-[]}]}
+{espada-1-[{espada-4-[]},{espada-2-[]}]}
+{espada-1-[{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{espada-1-[{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{espada-1-[{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{espada-1-[{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{espada-1-[{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{espada-1-[{basto-4-[]},{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{espada-1-[{basto-6-[]},{basto-4-[]},{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{espada-1-[{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{espada-1-[{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{espada-1-[{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+
+{espada-1-[{basto-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{espada-1-[{basto-4-[]},{basto-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{espada-1-[{basto-6-[]},{basto-4-[]},{basto-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{espada-1-[{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{espada-1-[{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{espada-1-[{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{espada-1-[{copa-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{espada-1-[{copa-4-[]},{copa-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{espada-1-[{copa-6-[]},{copa-4-[]},{copa-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{espada-1-[{copa-8-[]},{copa-6-[]},{copa-4-[]},{copa-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{espada-1-[{copa-10-[]},{copa-8-[]},{copa-6-[]},{copa-4-[]},{copa-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{espada-1-[{copa-12-[]},{copa-10-[]},{copa-8-[]},{copa-6-[]},{copa-4-[]},{copa-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{espada-1-[{oro-2-[]},{copa-12-[]},{copa-10-[]},{copa-8-[]},{copa-6-[]},{copa-4-[]},{copa-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{espada-1-[{oro-2-[]},{copa-12-[]},{copa-10-[]},{copa-8-[]},{copa-6-[]},{copa-4-[]},{copa-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{oro-2-[]}{espada-1-[{copa-12-[]},{copa-10-[]},{copa-8-[]},{copa-6-[]},{copa-4-[]},{copa-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{copa-12-[]}{espada-1-[{copa-10-[]},{copa-8-[]},{copa-6-[]},{copa-4-[]},{copa-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{copa-10-[]}{espada-1-[{copa-8-[]},{copa-6-[]},{copa-4-[]},{copa-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{copa-8-[]}{espada-1-[{copa-6-[]},{copa-4-[]},{copa-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{copa-6-[]}{espada-1-[{copa-4-[]},{copa-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{copa-4-[]}{espada-1-[{copa-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{copa-2-[]}{espada-1-[{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{basto-12-[]}{espada-1-[{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{basto-10-[]}{espada-1-[{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{basto-8-[]}{espada-1-[{basto-6-[]},{basto-4-[]},{basto-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{basto-6-[]}{espada-1-[{basto-4-[]},{basto-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{basto-4-[]}{espada-1-[{basto-2-[]},{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{basto-2-[]}{espada-1-[{basto-12-[]},{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{basto-12-[]}{espada-1-[{basto-10-[]},{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{basto-10-[]}{espada-1-[{basto-8-[]},{basto-6-[]},{basto-4-[]},{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{basto-8-[]}{espada-1-[{basto-6-[]},{basto-4-[]},{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{basto-6-[]}{espada-1-[{basto-4-[]},{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{basto-4-[]}{espada-1-[{basto-2-[]},{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{basto-2-[]}{espada-1-[{espada-12-[]},{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{espada-12-[]}{espada-1-[{espada-10-[]},{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{espada-10-[]}{espada-1-[{espada-8-[]},{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{espada-8-[]}{espada-1-[{espada-6-[]},{espada-4-[]},{espada-2-[]}]}
+{espada-6-[]}{espada-1-[{espada-4-[]},{espada-2-[]}]}
+{espada-4-[]}{espada-1-[{espada-2-[]}]}
+{espada-2-[]}{espada-1-[]}
+{espada-1-[]}
+
